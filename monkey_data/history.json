@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "timestamp": "2025-11-20T17:00:43.757695",
+      "dna_hash": "576a6a3c176765b4",
+      "generation": 1,
+      "mutation_count": 0,
+      "rarity_score": 26.666666666666668,
+      "traits": {
+        "body_color": "copper",
+        "face_expression": "zen",
+        "accessory": "none",
+        "pattern": "stars",
+        "background": "blue_sky",
+        "special": "particles"
+      },
+      "story": "\ud83c\udf89 Your monkey was born!"
+    },
+    {
+      "timestamp": "2025-11-20T17:00:54.511609",
+      "dna_hash": "a1046945485601d0",
+      "generation": 1,
+      "mutation_count": 2,
+      "rarity_score": 26.666666666666668,
+      "traits": {
+        "body_color": "copper",
+        "face_expression": "zen",
+        "accessory": "none",
+        "pattern": "stars",
+        "background": "sunset",
+        "special": "particles"
+      },
+      "story": "Your monkey evolved randomly!"
+    }
+  ]
+}

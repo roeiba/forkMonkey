@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForkMonkey - Your AI Digital Pet</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- NES.css for retro/blocky UI -->
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle background -->
+    <div id="particles-js"></div>
+    
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="pixel-icon">🐵</div>
+                <h1 class="title">FORKMONKEY</h1>
+            </div>
+            <div class="header-stats">
+                <div class="stat-badge">
+                    <span class="stat-label">GEN</span>
+                    <span class="stat-value" id="generation">-</span>
+                </div>
+                <div class="stat-badge">
+                    <span class="stat-label">AGE</span>
+                    <span class="stat-value" id="age">-</span>
+                </div>
+                <div class="stat-badge rarity-badge">
+                    <span class="stat-label">RARITY</span>
+                    <span class="stat-value" id="rarity">-</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content grid -->
+        <div class="content-grid">
+            <!-- Left panel - Monkey display -->
+            <div class="panel monkey-panel">
+                <div class="panel-header">
+                    <h2>YOUR MONKEY</h2>
+                    <div class="dna-hash" id="dna-hash">Loading...</div>
+                </div>
+                <div class="monkey-display">
+                    <div class="monkey-container" id="monkey-svg">
+                        <!-- SVG will be loaded here -->
+                        <div class="loading-spinner">
+                            <div class="nes-container is-rounded">
+                                <p>Loading monkey...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monkey-info">
+                        <div class="info-row">
+                            <span class="info-label">Mutations:</span>
+                            <span class="info-value" id="mutations">0</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Parent:</span>
+                            <span class="info-value" id="parent">Genesis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right panel - Traits -->
+            <div class="panel traits-panel">
+                <div class="panel-header">
+                    <h2>TRAITS</h2>
+                    <button class="nes-btn is-primary refresh-btn" onclick="loadMonkeyData()">
+                        <span>↻</span>
+                    </button>
+                </div>
+                <div class="traits-grid" id="traits-grid">
+                    <!-- Traits will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Bottom panel - Evolution history -->
+            <div class="panel history-panel">
+                <div class="panel-header">
+                    <h2>EVOLUTION HISTORY</h2>
+                    <div class="history-count">
+                        <span id="history-count">0</span> events
+                    </div>
+                </div>
+                <div class="history-timeline" id="history-timeline">
+                    <!-- History will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>🧬 Powered by AI Evolution • 🎨 Generated with Claude</p>
+                <div class="social-links">
+                    <a href="https://github.com" class="nes-btn is-primary" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                    <button class="nes-btn" onclick="downloadMonkey()">
+                        <span>Download SVG</span>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Chart.js for stats visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Custom script -->
+    <script src="script.js"></script>
+</body>
+</html>

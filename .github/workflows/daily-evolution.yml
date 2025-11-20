@@ -1,0 +1,92 @@
+name: Daily Evolution
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      use_ai:
+        description: 'Use AI-powered evolution'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Check if monkey exists
+        id: check_monkey
+        run: |
+          if [ -f "monkey_data/dna.json" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Initialize monkey (first time)
+        if: steps.check_monkey.outputs.exists == 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "🐵 First time setup - initializing monkey..."
+          python src/cli.py init --from-fork
+      
+      - name: Evolve monkey
+        if: steps.check_monkey.outputs.exists == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "🧬 Evolving monkey..."
+          if [ "${{ github.event.inputs.use_ai }}" = "true" ] || [ -z "${{ github.event.inputs.use_ai }}" ]; then
+            python src/cli.py evolve --ai
+          else
+            python src/cli.py evolve --strength 0.1
+          fi
+      
+      - name: Update README
+        run: |
+          echo "📝 Updating README..."
+          python src/cli.py update-readme
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add monkey_data/ README.md
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🐵 Daily evolution: $(date +%Y-%m-%d)"
+            git push
+          fi
+      
+      - name: Show monkey stats
+        run: |
+          echo "📊 Current monkey stats:"
+          python src/cli.py show

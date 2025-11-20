@@ -1,0 +1,40 @@
+{
+  "generation": 1,
+  "parent_id": null,
+  "dna_hash": "a1046945485601d0",
+  "mutation_count": 2,
+  "birth_timestamp": 893967,
+  "traits": {
+    "body_color": {
+      "value": "copper",
+      "rarity": "uncommon",
+      "gene_sequence": "0d83b1e8"
+    },
+    "face_expression": {
+      "value": "zen",
+      "rarity": "rare",
+      "gene_sequence": "61895282"
+    },
+    "accessory": {
+      "value": "none",
+      "rarity": "common",
+      "gene_sequence": "8f67e8db"
+    },
+    "pattern": {
+      "value": "stars",
+      "rarity": "uncommon",
+      "gene_sequence": "67a8d2be"
+    },
+    "background": {
+      "value": "sunset",
+      "rarity": "common",
+      "gene_sequence": "5d4ff589"
+    },
+    "special": {
+      "value": "particles",
+      "rarity": "rare",
+      "gene_sequence": "65e997af"
+    }
+  },
+  "rarity_score": 26.666666666666668
+}

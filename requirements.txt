@@ -1,0 +1,23 @@
+# Core dependencies
+anthropic>=0.18.0
+requests>=2.31.0
+PyGithub>=2.1.1
+
+# Data handling
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Visualization
+cairosvg>=2.7.1
+pillow>=10.1.0
+
+# Testing
+pytest>=7.4.3
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.1
+pytest-mock>=3.12.0
+
+# Utilities
+click>=8.1.7
+rich>=13.7.0
+pyyaml>=6.0.1

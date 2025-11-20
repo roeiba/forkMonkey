@@ -1,0 +1,94 @@
+name: Initialize Forked Monkey
+
+on:
+  # Trigger when repository is forked
+  fork:
+  # Also allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  initialize_child:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Initialize child monkey from parent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "🍴 Fork detected! Initializing child monkey..."
+          python src/cli.py init --from-fork
+      
+      - name: Update README
+        run: |
+          echo "📝 Updating README..."
+          python src/cli.py update-readme
+      
+      - name: Commit initial monkey
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add monkey_data/ README.md
+          git commit -m "🐵 Initialize child monkey from parent"
+          git push
+      
+      - name: Show new monkey
+        run: |
+          echo "👶 Your new monkey:"
+          python src/cli.py show
+      
+      - name: Create welcome issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `## 🐵 Your Monkey is Born!
+            
+            Congratulations! You've successfully forked a ForkMonkey.
+            
+            ### What happens now?
+            
+            1. **Daily Evolution**: Your monkey will evolve automatically every day at midnight UTC
+            2. **AI-Powered**: Set the ANTHROPIC_API_KEY secret to enable AI-powered evolution
+            3. **Watch it Grow**: Check back daily to see how your monkey changes
+            
+            ### Next Steps
+            
+            1. Go to **Settings → Secrets → Actions**
+            2. Add a new secret: ANTHROPIC_API_KEY
+            3. Get your API key from https://console.anthropic.com
+            4. Enable GitHub Actions if not already enabled
+            
+            ### Your Monkey Traits
+            
+            Check the README to see your monkey's current appearance and stats!
+            
+            ### Questions?
+            
+            See the [README](README.md) for more information.
+            
+            Happy monkey growing! 🌱`;
+            
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🎉 Welcome to ForkMonkey!',
+              body: body
+            });

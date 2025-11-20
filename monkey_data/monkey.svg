@@ -1,0 +1,68 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+    <!-- Rainbow gradient -->
+    <linearGradient id="rainbow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+        <stop offset="16%" style="stop-color:#FF7F00;stop-opacity:1" />
+        <stop offset="33%" style="stop-color:#FFFF00;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#00FF00;stop-opacity:1" />
+        <stop offset="66%" style="stop-color:#0000FF;stop-opacity:1" />
+        <stop offset="83%" style="stop-color:#4B0082;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#9400D3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Galaxy gradient -->
+    <radialGradient id="galaxy-gradient">
+        <stop offset="0%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#4B0082;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000033;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Holographic gradient -->
+    <linearGradient id="holo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:0.8" />
+        <stop offset="50%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#FFFF00;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Multiverse gradient -->
+    <radialGradient id="multiverse-gradient">
+        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+        <stop offset="33%" style="stop-color:#FF00FF;stop-opacity:1" />
+        <stop offset="66%" style="stop-color:#00FFFF;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Dimension rift gradient -->
+    <linearGradient id="rift-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+        <stop offset="25%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#00FFFF;stop-opacity:1" />
+        <stop offset="75%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+</defs>
+
+<rect width="400" height="400" fill="#FF6347"/>
+<circle cx="200" cy="200" r="120" fill="#B87333" stroke="#000" stroke-width="3"/>
+<circle cx="110" cy="170" r="40" fill="#B87333" stroke="#000" stroke-width="2"/>
+<circle cx="290" cy="170" r="40" fill="#B87333" stroke="#000" stroke-width="2"/>
+<circle cx="110" cy="170" r="25" fill="#FFB6C1"/>
+<circle cx="290" cy="170" r="25" fill="#FFB6C1"/>
+<ellipse cx="200" cy="220" rx="80" ry="70" fill="#F5DEB3"/>
+<text x="284.0" y="200.0" font-size="20" fill="gold" text-anchor="middle">★</text>
+<text x="242.0" y="272.74613391789285" font-size="20" fill="gold" text-anchor="middle">★</text>
+<text x="158.0" y="272.74613391789285" font-size="20" fill="gold" text-anchor="middle">★</text>
+<text x="116.0" y="200.0" font-size="20" fill="gold" text-anchor="middle">★</text>
+<text x="157.99999999999997" y="127.25386608210718" font-size="20" fill="gold" text-anchor="middle">★</text>
+<text x="242.0" y="127.25386608210715" font-size="20" fill="gold" text-anchor="middle">★</text>
+<circle cx="160" cy="190" r="15" fill="#000"/>
+<circle cx="240" cy="190" r="15" fill="#000"/>
+<circle cx="157" cy="187" r="5" fill="#FFF"/>
+<circle cx="237" cy="187" r="5" fill="#FFF"/>
+<ellipse cx="200" cy="220" rx="12" ry="8" fill="#8B4513"/>
+<path d="M 180 245 Q 200 250 220 245" stroke="#000" stroke-width="2" fill="none"/>
+
+
+</svg>

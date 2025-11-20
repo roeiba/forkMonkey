@@ -1,0 +1,35 @@
+{
+  "dna_hash": "a1046945485601d0",
+  "generation": 1,
+  "age_days": 0,
+  "mutation_count": 2,
+  "rarity_score": 26.666666666666668,
+  "parent_id": null,
+  "traits": {
+    "body_color": {
+      "value": "copper",
+      "rarity": "uncommon"
+    },
+    "face_expression": {
+      "value": "zen",
+      "rarity": "rare"
+    },
+    "accessory": {
+      "value": "none",
+      "rarity": "common"
+    },
+    "pattern": {
+      "value": "stars",
+      "rarity": "uncommon"
+    },
+    "background": {
+      "value": "sunset",
+      "rarity": "common"
+    },
+    "special": {
+      "value": "particles",
+      "rarity": "rare"
+    }
+  },
+  "last_updated": "2025-11-20T17:00:54.511451"
+}
