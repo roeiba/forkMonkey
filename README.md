@@ -94,16 +94,82 @@ Then open http://localhost:8000/web/index.html in your browser!
 ## Your Monkey
 
 <!-- MONKEY_DISPLAY_START -->
-*Your monkey will appear here after first evolution*
+<div align="center">
+
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+    <!-- Rainbow gradient -->
+    <linearGradient id="rainbow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+        <stop offset="16%" style="stop-color:#FF7F00;stop-opacity:1" />
+        <stop offset="33%" style="stop-color:#FFFF00;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#00FF00;stop-opacity:1" />
+        <stop offset="66%" style="stop-color:#0000FF;stop-opacity:1" />
+        <stop offset="83%" style="stop-color:#4B0082;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#9400D3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Galaxy gradient -->
+    <radialGradient id="galaxy-gradient">
+        <stop offset="0%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#4B0082;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000033;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Holographic gradient -->
+    <linearGradient id="holo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:0.8" />
+        <stop offset="50%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#FFFF00;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Multiverse gradient -->
+    <radialGradient id="multiverse-gradient">
+        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+        <stop offset="33%" style="stop-color:#FF00FF;stop-opacity:1" />
+        <stop offset="66%" style="stop-color:#00FFFF;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Dimension rift gradient -->
+    <linearGradient id="rift-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+        <stop offset="25%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#00FFFF;stop-opacity:1" />
+        <stop offset="75%" style="stop-color:#9400D3;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+</defs>
+
+<rect width="300" height="300" fill="#F0E68C"/>
+<circle cx="150" cy="150" r="120" fill="#D2B48C" stroke="#000" stroke-width="3"/>
+<circle cx="60" cy="120" r="40" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+<circle cx="240" cy="120" r="40" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+<circle cx="60" cy="120" r="25" fill="#FFB6C1"/>
+<circle cx="240" cy="120" r="25" fill="#FFB6C1"/>
+<ellipse cx="150" cy="170" rx="80" ry="70" fill="#F5DEB3"/>
+<ellipse cx="110" cy="140" rx="15" ry="20" fill="#000"/>
+<line x1="175" y1="140" x2="205" y2="140" stroke="#000" stroke-width="3"/>
+<ellipse cx="150" cy="170" rx="12" ry="8" fill="#8B4513"/>
+<line x1="130" y1="195" x2="170" y2="195" stroke="#000" stroke-width="2"/>
+<rect x="100" y="0" width="100" height="20" fill="#8B0000" stroke="#000" stroke-width="2"/>
+<text x="50" y="50" font-size="30" fill="gold">✨</text>
+<text x="250" y="50" font-size="30" fill="gold">✨</text>
+<text x="50" y="250" font-size="30" fill="gold">✨</text>
+<text x="250" y="250" font-size="30" fill="gold">✨</text>
+</svg>
+
+</div>
 <!-- MONKEY_DISPLAY_END -->
 
 ## Monkey Stats
 
 <!-- MONKEY_STATS_START -->
 - **Generation**: 1
-- **Age**: 0 days
-- **Mutations**: 0
-- **Rarity Score**: Calculating...
+- **Age**: 5 days
+- **Mutations**: 2
+- **Rarity Score**: 20.0/100
 <!-- MONKEY_STATS_END -->
 
 ## Family Tree

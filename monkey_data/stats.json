@@ -1,8 +1,8 @@
 {
-  "dna_hash": "533b79af49812bee",
+  "dna_hash": "fd1299d7e9c34251",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 0,
+  "mutation_count": 2,
   "rarity_score": 20.0,
   "parent_id": null,
   "traits": {
@@ -23,7 +23,7 @@
       "rarity": "common"
     },
     "background": {
-      "value": "city",
+      "value": "beach",
       "rarity": "uncommon"
     },
     "special": {
@@ -31,5 +31,5 @@
       "rarity": "uncommon"
     }
   },
-  "last_updated": "2025-11-20T17:39:02.091974"
+  "last_updated": "2025-11-20T17:50:40.008037"
 }

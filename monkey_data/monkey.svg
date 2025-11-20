@@ -44,7 +44,7 @@
     </linearGradient>
 </defs>
 
-<rect width="400" height="400" fill="#696969"/>
+<rect width="400" height="400" fill="#F0E68C"/>
 <circle cx="200" cy="200" r="120" fill="#D2B48C" stroke="#000" stroke-width="3"/>
 <circle cx="110" cy="170" r="40" fill="#D2B48C" stroke="#000" stroke-width="2"/>
 <circle cx="290" cy="170" r="40" fill="#D2B48C" stroke="#000" stroke-width="2"/>

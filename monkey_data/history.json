@@ -63,6 +63,22 @@
         "special": "sparkles"
       },
       "story": "\ud83c\udf89 Your monkey was born!"
+    },
+    {
+      "timestamp": "2025-11-20T17:50:40.009446",
+      "dna_hash": "fd1299d7e9c34251",
+      "generation": 1,
+      "mutation_count": 2,
+      "rarity_score": 20.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "winking",
+        "accessory": "simple_hat",
+        "pattern": "solid",
+        "background": "beach",
+        "special": "sparkles"
+      },
+      "story": "Your monkey evolved! Changes: background: city \u2192 beach"
     }
   ]
 }
