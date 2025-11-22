@@ -1,33 +1,34 @@
 // ForkMonkey Web Interface
 
 // Initialize particles background
+// Initialize particles background
 particlesJS('particles-js', {
     particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 40, density: { enable: true, value_area: 800 } },
         color: { value: '#00ff88' },
         shape: { type: 'circle' },
         opacity: {
-            value: 0.5,
+            value: 0.2,
             random: true,
-            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+            anim: { enable: true, speed: 0.5, opacity_min: 0.05, sync: false }
         },
         size: {
-            value: 3,
+            value: 2,
             random: true,
-            anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+            anim: { enable: true, speed: 1, size_min: 0.1, sync: false }
         },
         line_linked: {
             enable: true,
             distance: 150,
             color: '#00ff88',
-            opacity: 0.4,
+            opacity: 0.1,
             width: 1
         },
         move: {
             enable: true,
-            speed: 2,
+            speed: 0.5,
             direction: 'none',
-            random: false,
+            random: true,
             straight: false,
             out_mode: 'out',
             bounce: false
@@ -36,12 +37,12 @@ particlesJS('particles-js', {
     interactivity: {
         detect_on: 'canvas',
         events: {
-            onhover: { enable: true, mode: 'repulse' },
+            onhover: { enable: true, mode: 'bubble' },
             onclick: { enable: true, mode: 'push' },
             resize: true
         },
         modes: {
-            repulse: { distance: 100, duration: 0.4 },
+            bubble: { distance: 200, size: 4, duration: 2, opacity: 0.4, speed: 3 },
             push: { particles_nb: 4 }
         }
     },
