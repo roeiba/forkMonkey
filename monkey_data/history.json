@@ -319,6 +319,22 @@
         "special": "sparkles"
       },
       "story": "Your monkey rested today. No visible changes."
+    },
+    {
+      "timestamp": "2025-12-20T13:06:32.274016",
+      "dna_hash": "707e0fcf10d1e302",
+      "generation": 1,
+      "mutation_count": 0,
+      "rarity_score": 13.333333333333334,
+      "traits": {
+        "body_color": "gray",
+        "face_expression": "curious",
+        "accessory": "crown",
+        "pattern": "hearts",
+        "background": "white",
+        "special": "none"
+      },
+      "story": "\ud83c\udf89 Your monkey was born!"
     }
   ]
 }
