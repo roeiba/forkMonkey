@@ -60,8 +60,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          enablement: true
+        # Note: For forked repos, GitHub Pages must be enabled manually in 
+        # Settings → Pages → Source → GitHub Actions
+        # The 'enablement: true' option doesn't work on forks due to token restrictions
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

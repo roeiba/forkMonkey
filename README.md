@@ -183,9 +183,12 @@ forkMonkey/
 
 1. **Fork this repository** - Creates a child monkey
 2. **Child inherits traits** - 50% from parent, 50% random
-3. **Set up your API key** - Add ANTHROPIC_API_KEY secret
-4. **Enable Actions** - Let your child evolve
-5. **Watch it grow** - Different from parent, but related
+3. **Enable Actions** - Go to Actions tab and enable workflows
+4. **Enable GitHub Pages** - Go to Settings → Pages → Source → **GitHub Actions**
+5. **Set up your API key** - Add ANTHROPIC_API_KEY secret (optional, for AI evolution)
+6. **Watch it grow** - Different from parent, but related
+
+> ⚠️ **For forked repos**: GitHub Pages must be enabled manually. The workflow cannot auto-enable it due to GitHub security restrictions.
 
 ## Rarity System
 

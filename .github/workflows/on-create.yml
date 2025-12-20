@@ -66,7 +66,17 @@ jobs:
             
             Congratulations! You've created your own ForkMonkey.
             
-            ### What happens now?
+            ### ⚠️ Required: Enable GitHub Pages
+            
+            **For forked repos, you must manually enable GitHub Pages:**
+            
+            1. Go to **Settings → Pages**
+            2. Under "Build and deployment", set Source to **GitHub Actions**
+            3. Click Save
+            
+            Then re-run the "Deploy to GitHub Pages" workflow from the Actions tab.
+            
+            ### What happens next?
             
             1. **Daily Evolution**: Your monkey evolves automatically every day at midnight UTC
             2. **GitHub Pages**: View your monkey at \`https://${context.repo.owner}.github.io/${context.repo.repo}/\`
