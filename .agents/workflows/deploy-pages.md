@@ -46,11 +46,9 @@ The workflow runs in the following scenarios:
 
 ## Setup Requirements
 
-To enable GitHub Pages deployment:
+GitHub Pages is automatically enabled when the workflow runs for the first time. The workflow uses the `enablement: true` parameter in the `configure-pages` action to automatically enable GitHub Pages with GitHub Actions as the build source.
 
-1. Go to **Settings → Pages**
-2. Under "Build and deployment", select **GitHub Actions** as the source
-3. The workflow will handle the rest automatically
+No manual configuration is required - this works out of the box for forked repositories!
 
 ## What Gets Deployed
 
