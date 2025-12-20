@@ -32,7 +32,8 @@ def cli():
 
 @cli.command()
 @click.option('--from-fork', is_flag=True, help='Initialize from parent repo (for forks)')
-def init(from_fork):
+@click.option('--force', '-f', is_flag=True, help='Force overwrite without confirmation (for CI)')
+def init(from_fork, force):
     """Initialize a new monkey"""
     console.print("\n🐵 [bold cyan]Initializing ForkMonkey...[/bold cyan]\n")
     
@@ -45,9 +46,13 @@ def init(from_fork):
         console.print(f"   DNA Hash: {existing_dna.dna_hash}")
         console.print(f"   Generation: {existing_dna.generation}")
         
-        if not click.confirm("\nOverwrite existing monkey?"):
-            console.print("[red]Cancelled.[/red]")
-            return
+        # In fork mode or with --force, auto-confirm to allow CI to proceed
+        if not force and not from_fork:
+            if not click.confirm("\nOverwrite existing monkey?"):
+                console.print("[red]Cancelled.[/red]")
+                return
+        else:
+            console.print("[cyan]   Auto-confirming for fork/CI mode...[/cyan]")
     
     # Initialize DNA
     if from_fork:
