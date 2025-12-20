@@ -1,9 +1,9 @@
 {
-  "dna_hash": "707e0fcf10d1e302",
+  "dna_hash": "a145968fef0d9fb0",
   "generation": 1,
   "age_days": 0,
   "mutation_count": 0,
-  "rarity_score": 13.333333333333334,
+  "rarity_score": 15.0,
   "parent_id": null,
   "traits": {
     "body_color": {
@@ -11,25 +11,25 @@
       "rarity": "common"
     },
     "face_expression": {
-      "value": "curious",
-      "rarity": "common"
+      "value": "wise",
+      "rarity": "uncommon"
     },
     "accessory": {
       "value": "crown",
       "rarity": "uncommon"
     },
     "pattern": {
-      "value": "hearts",
-      "rarity": "uncommon"
+      "value": "stripes",
+      "rarity": "common"
     },
     "background": {
       "value": "white",
       "rarity": "common"
     },
     "special": {
-      "value": "none",
-      "rarity": "common"
+      "value": "sparkles",
+      "rarity": "uncommon"
     }
   },
-  "last_updated": "2025-12-20T13:06:32.273722"
+  "last_updated": "2025-12-20T13:14:26.935416"
 }
