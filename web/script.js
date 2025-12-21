@@ -323,6 +323,19 @@ const ForkMonkey = {
             document.getElementById('stat-mutations').textContent = stats.mutation_count || 0;
             document.getElementById('stat-parent').textContent = stats.parent_id || 'Genesis';
 
+            // Calculate and display evolution streak
+            const streak = this.calculateEvolutionStreak(history);
+            const streakEl = document.getElementById('stat-streak');
+            streakEl.textContent = `${streak} day${streak !== 1 ? 's' : ''}`;
+            
+            // Add fire effect for active streaks
+            const streakCard = streakEl.closest('.streak-card');
+            if (streak >= 7) {
+                streakCard.classList.add('on-fire');
+            } else {
+                streakCard.classList.remove('on-fire');
+            }
+
             // Render traits
             this.renderTraits(stats.traits);
             
@@ -399,6 +412,51 @@ const ForkMonkey = {
                 </div>
             `;
         }).join('');
+    },
+
+    /**
+     * Calculate evolution streak from history
+     * A streak is consecutive days with evolution events
+     */
+    calculateEvolutionStreak(history) {
+        if (!history || !history.evolutions || history.evolutions.length === 0) {
+            return 0;
+        }
+
+        // Get unique dates of evolutions (sorted newest first)
+        const evolutionDates = [...new Set(
+            history.evolutions.map(e => {
+                const date = new Date(e.timestamp);
+                return date.toISOString().split('T')[0]; // YYYY-MM-DD
+            })
+        )].sort().reverse();
+
+        if (evolutionDates.length === 0) return 0;
+
+        // Check if there was an evolution today or yesterday (streak is still active)
+        const today = new Date().toISOString().split('T')[0];
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        
+        const mostRecent = evolutionDates[0];
+        if (mostRecent !== today && mostRecent !== yesterday) {
+            return 0; // Streak broken
+        }
+
+        // Count consecutive days
+        let streak = 1;
+        for (let i = 1; i < evolutionDates.length; i++) {
+            const current = new Date(evolutionDates[i - 1]);
+            const previous = new Date(evolutionDates[i]);
+            const diffDays = Math.round((current - previous) / 86400000);
+            
+            if (diffDays === 1) {
+                streak++;
+            } else {
+                break; // Gap in streak
+            }
+        }
+
+        return streak;
     },
 
     /**
@@ -1229,6 +1287,9 @@ https://github.com/roeiba/forkMonkey
         // Reset wizard state
         this.resetAdoptionWizard();
 
+        // Track adoption wizard opened
+        this.trackEvent('adoption_wizard_opened', { source: 'cta' });
+
         this.showToast('🐵 Choose your adoption method!', 'info');
     },
 
@@ -1300,6 +1361,9 @@ https://github.com/roeiba/forkMonkey
      */
     selectAdoptionMethod(method) {
         this.adoption.method = method;
+        
+        // Track method selection
+        this.trackEvent('adoption_method_selected', { method });
 
         if (method === 'manual') {
             // For manual, skip customization and go straight to GitHub fork

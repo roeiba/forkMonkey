@@ -570,6 +570,62 @@ body {
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 100%);
 }
 
+/* Streak Card Styling */
+.stat-card.streak-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card.streak-card.on-fire {
+    border-color: #ff6b35;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(255, 165, 0, 0.05) 100%);
+    animation: streak-glow 2s ease-in-out infinite;
+}
+
+.stat-card.streak-card.on-fire .stat-icon-bg {
+    animation: fire-bounce 0.5s ease-in-out infinite;
+}
+
+.stat-card.streak-card.on-fire::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+    animation: fire-pulse 2s ease-in-out infinite;
+}
+
+@keyframes streak-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 107, 53, 0.3), 0 0 10px rgba(255, 165, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 107, 53, 0.5), 0 0 25px rgba(255, 165, 0, 0.3);
+    }
+}
+
+@keyframes fire-bounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+
+@keyframes fire-pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+
 .stat-icon-bg {
     font-size: var(--text-2xl);
 }
