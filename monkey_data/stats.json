@@ -1,35 +1,35 @@
 {
-  "dna_hash": "d8ca76b264e70d7c",
+  "dna_hash": "0eecf5354c4abb6d",
   "generation": 1,
   "age_days": 0,
   "mutation_count": 0,
-  "rarity_score": 18.333333333333332,
+  "rarity_score": 31.666666666666664,
   "parent_id": null,
   "traits": {
     "body_color": {
-      "value": "tan",
+      "value": "beige",
       "rarity": "common"
     },
     "face_expression": {
-      "value": "sleepy",
-      "rarity": "common"
-    },
-    "accessory": {
-      "value": "horns",
+      "value": "zen",
       "rarity": "rare"
     },
-    "pattern": {
-      "value": "gradient",
+    "accessory": {
+      "value": "bandana",
       "rarity": "common"
     },
+    "pattern": {
+      "value": "quantum",
+      "rarity": "legendary"
+    },
     "background": {
-      "value": "sunset",
+      "value": "white",
       "rarity": "common"
     },
     "special": {
-      "value": "shadow",
-      "rarity": "uncommon"
+      "value": "none",
+      "rarity": "common"
     }
   },
-  "last_updated": "2025-12-21T20:50:40.949383"
+  "last_updated": "2025-12-21T22:27:53.727771"
 }
