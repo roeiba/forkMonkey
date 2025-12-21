@@ -70,7 +70,6 @@ def init(from_fork, force):
     # Save DNA
     storage.save_dna_locally(dna)
     storage.save_stats(dna, age_days=0)
-    storage.save_history_entry(dna, "🎉 Your monkey was born!")
     
     # Generate initial visualization
     svg = MonkeyVisualizer.generate_svg(dna)
@@ -78,11 +77,15 @@ def init(from_fork, force):
     svg_file.write_text(svg)
     
     # Archive with timestamp
-    from datetime import datetime
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
-    archive_file = Path(f"monkey_evolution/{timestamp}_monkey.svg")
+    from datetime import datetime, timezone
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M")
+    svg_filename = f"{timestamp}_monkey.svg"
+    archive_file = Path(f"monkey_evolution/{svg_filename}")
     archive_file.parent.mkdir(exist_ok=True)
     archive_file.write_text(svg)
+    
+    # Save history with SVG filename
+    storage.save_history_entry(dna, "🎉 Your monkey was born!", svg_filename=svg_filename)
     
     # Display info
     console.print("\n[bold green]✅ Monkey initialized![/bold green]\n")
@@ -161,19 +164,22 @@ def evolve(ai, strength):
     # Save
     storage.save_dna_locally(evolved_dna)
     storage.save_stats(evolved_dna, age_days=0)  # TODO: calculate actual age
-    storage.save_history_entry(evolved_dna, story)
     
     # Generate new visualization
     svg = MonkeyVisualizer.generate_svg(evolved_dna)
     svg_file = Path("monkey_data/monkey.svg")
     svg_file.write_text(svg)
     
-    # Archive with timestamp
-    from datetime import datetime
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
-    archive_file = Path(f"monkey_evolution/{timestamp}_monkey.svg")
+    # Archive with timestamp (using UTC for consistency)
+    from datetime import datetime, timezone
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M")
+    svg_filename = f"{timestamp}_monkey.svg"
+    archive_file = Path(f"monkey_evolution/{svg_filename}")
     archive_file.parent.mkdir(exist_ok=True)
     archive_file.write_text(svg)
+    
+    # Save history with SVG filename
+    storage.save_history_entry(evolved_dna, story, svg_filename=svg_filename)
     
     console.print(f"\n[bold green]✅ Evolution complete![/bold green]")
     console.print(f"New DNA: {evolved_dna.dna_hash}")
@@ -266,9 +272,9 @@ def visualize():
     svg_file = Path("monkey_data/monkey.svg")
     svg_file.write_text(svg)
     
-    # Archive with timestamp
-    from datetime import datetime
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    # Archive with timestamp (using UTC for consistency)
+    from datetime import datetime, timezone
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M")
     archive_file = Path(f"monkey_evolution/{timestamp}_monkey.svg")
     archive_file.parent.mkdir(exist_ok=True)
     archive_file.write_text(svg)
@@ -310,9 +316,9 @@ def update_readme():
     svg_file = Path("monkey_data/monkey.svg")
     svg_file.write_text(svg)
     
-    # Archive with timestamp
-    from datetime import datetime
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    # Archive with timestamp (using UTC for consistency)
+    from datetime import datetime, timezone
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M")
     archive_file = Path(f"monkey_evolution/{timestamp}_monkey.svg")
     archive_file.parent.mkdir(exist_ok=True)
     archive_file.write_text(svg)

@@ -99,8 +99,14 @@ class MonkeyStorage:
             print(f"❌ Failed to load DNA: {e}")
             return None
     
-    def save_history_entry(self, dna: MonkeyDNA, story: str = "") -> bool:
-        """Add entry to evolution history"""
+    def save_history_entry(self, dna: MonkeyDNA, story: str = "", svg_filename: Optional[str] = None) -> bool:
+        """Add entry to evolution history
+        
+        Args:
+            dna: The monkey DNA at this point in history
+            story: Narrative description of what happened
+            svg_filename: Optional filename of the SVG snapshot (e.g., "2025-11-20_17-32_monkey.svg")
+        """
         try:
             history_file = self.data_dir / "history.json"
             
@@ -124,6 +130,10 @@ class MonkeyStorage:
                 },
                 "story": story
             }
+            
+            # Add SVG filename if provided
+            if svg_filename:
+                entry["svg_filename"] = svg_filename
             
             history["entries"].append(entry)
             

@@ -279,9 +279,9 @@ const ForkMonkey = {
             </div>
         `;
 
-        // Load SVGs for each entry
+        // Load SVGs for each entry (use svg_filename if available, otherwise fallback to timestamp)
         const entriesWithSvgs = await Promise.all(entries.map(async (entry, index) => {
-            const svgContent = await this.getEvolutionSvg(entry.timestamp);
+            const svgContent = await this.getEvolutionSvg(entry.timestamp, entry.svg_filename);
             return { ...entry, svgContent, originalIndex: index };
         }));
 
@@ -325,29 +325,39 @@ const ForkMonkey = {
     },
 
     /**
-     * Get evolution SVG for a specific timestamp
-     * SVGs are stored in monkey_evolution with format: YYYY-MM-DD_HH-mm_monkey.svg
-     * Note: Timestamps are in UTC (from GitHub Actions), so we use UTC methods
+     * Get evolution SVG for a specific history entry
+     * Uses svg_filename if available (new entries), otherwise calculates from timestamp (legacy)
+     * 
+     * @param {string} timestamp - ISO timestamp of the entry
+     * @param {string|null} svgFilename - Direct SVG filename if available
      */
-    async getEvolutionSvg(timestamp) {
+    async getEvolutionSvg(timestamp, svgFilename = null) {
         const basePath = this.getBasePath();
-        const date = new Date(timestamp);
-
-        // Format: YYYY-MM-DD_HH-mm_monkey.svg (using UTC to match GitHub Actions)
-        const year = date.getUTCFullYear();
-        const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-        const day = String(date.getUTCDate()).padStart(2, '0');
-        const hours = String(date.getUTCHours()).padStart(2, '0');
-        const minutes = String(date.getUTCMinutes()).padStart(2, '0');
-
-        const filename = `${year}-${month}-${day}_${hours}-${minutes}_monkey.svg`;
-        const svgPath = `${basePath}monkey_evolution/${filename}`;
 
         // Check cache first
         if (!this.svgCache) this.svgCache = {};
+
+        // If we have a direct filename, use it
+        let filename = svgFilename;
+
+        // Otherwise, calculate from timestamp (legacy entries)
+        if (!filename) {
+            const date = new Date(timestamp);
+            // Format: YYYY-MM-DD_HH-mm_monkey.svg (using UTC to match GitHub Actions)
+            const year = date.getUTCFullYear();
+            const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+            const day = String(date.getUTCDate()).padStart(2, '0');
+            const hours = String(date.getUTCHours()).padStart(2, '0');
+            const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+            filename = `${year}-${month}-${day}_${hours}-${minutes}_monkey.svg`;
+        }
+
+        // Check cache
         if (this.svgCache[filename]) {
             return this.svgCache[filename];
         }
+
+        const svgPath = `${basePath}monkey_evolution/${filename}`;
 
         try {
             const response = await fetch(svgPath);
@@ -357,7 +367,7 @@ const ForkMonkey = {
                 return svgContent;
             }
         } catch (error) {
-            // SVG not available for this timestamp
+            // SVG not available for this entry
         }
 
         return null;
@@ -371,8 +381,8 @@ const ForkMonkey = {
         const entry = entries[index];
         if (!entry) return;
 
-        // Get actual SVG for this entry
-        const svgContent = await this.getEvolutionSvg(entry.timestamp);
+        // Get actual SVG for this entry (use svg_filename if available)
+        const svgContent = await this.getEvolutionSvg(entry.timestamp, entry.svg_filename);
         const svgDisplay = svgContent
             ? `<div style="width: 200px; height: 200px; margin: 0 auto;">${svgContent}</div>`
             : '<div style="font-size: 4rem; margin-bottom: 16px;">🐵</div>';
