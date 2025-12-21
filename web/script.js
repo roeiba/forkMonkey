@@ -66,19 +66,23 @@ const ForkMonkey = {
         this.showToast('🐵 ForkMonkey loaded!', 'success');
     },
 
+    getDevMode() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('dev') == 'true';
+    },
 
     /**
      * Load all static JSON data files
      */
     async loadAllData() {
         const files = [
-            ['dna', `monkey_data/dna.json`],
-            ['stats', `monkey_data/stats.json`],
-            ['history', `monkey_data/history.json`],
-            ['community', `community_data.json`],
-            ['leaderboard', `leaderboard.json`],
-            ['familyTree', `family_tree.json`],
-            ['networkStats', `network_stats.json`]
+            ['dna', `${this.getDevMode() ? '/../' : '' }monkey_data/dna.json`],
+            ['stats', `${this.getDevMode() ? '/../' : '' }monkey_data/stats.json`],
+            ['history', `${this.getDevMode() ? '/../' : '' }monkey_data/history.json`],
+            ['community', 'community_data.json'],
+            ['leaderboard', 'leaderboard.json'],
+            ['familyTree', 'family_tree.json'],
+            ['networkStats', 'network_stats.json']
         ];
 
         const results = await Promise.allSettled(
@@ -205,7 +209,7 @@ const ForkMonkey = {
         const frame = document.getElementById('monkey-frame');
 
         try {
-            const response = await fetch('monkey_data/monkey.svg');
+            const response = await fetch(`${this.getDevMode() ? '../' : '' }monkey_data/monkey.svg`);
             if (response.ok) {
                 const svgText = await response.text();
                 frame.innerHTML = svgText;
@@ -355,7 +359,7 @@ const ForkMonkey = {
             return this.svgCache[filename];
         }
 
-        const svgPath = 'monkey_evolution/${filename}';
+        const svgPath = `${this.getDevMode() ? '../' : '' }monkey_evolution/${filename}`;
 
         try {
             const response = await fetch(svgPath);

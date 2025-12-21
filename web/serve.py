@@ -7,9 +7,8 @@ import http.server
 import socketserver
 import webbrowser
 import os
+import argparse
 from pathlib import Path
-
-PORT = 8000
 
 class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -20,6 +19,14 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
 def main():
+    parser = argparse.ArgumentParser(description='Simple HTTP server for ForkMonkey web interface')
+    parser.add_argument('--port', type=int, default=8000, help='Port to run the server on')
+    parser.add_argument('--dev', choices=['true', 'false'], default='true', help='Enable development mode')
+    args = parser.parse_args()
+    
+    PORT = args.port
+    dev_mode = args.dev == 'true'
+    
     # Change to project root directory (parent of web/)
     project_root = Path(__file__).parent.parent
     os.chdir(project_root)
@@ -31,7 +38,7 @@ def main():
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print(f"""
 ╔═══════════════════════════════════════════╗
-║     🐵 ForkMonkey Web Interface 🐵       ║
+║     🐵 ForkMonkey Web Interface 🐵        ║
 ╚═══════════════════════════════════════════╝
 
 Server running at: http://localhost:{PORT}
@@ -40,7 +47,8 @@ Press Ctrl+C to stop the server
         """)
         
         # Open browser to web/index.html
-        webbrowser.open(f'http://localhost:{PORT}/web/index.html')
+        dev_param = "?dev=true" if dev_mode else ""
+        webbrowser.open(f'http://localhost:{PORT}/web/index.html{dev_param}')
         
         try:
             httpd.serve_forever()
