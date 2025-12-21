@@ -1,0 +1,97 @@
+# Workflow Status - forkMonkey
+# This tracks progress through BMM methodology Analysis, Planning, and Solutioning phases.
+# Implementation phase is tracked separately in sprint-status.yaml
+
+# STATUS DEFINITIONS:
+# ==================
+# Initial Status (before completion):
+#   - required: Must be completed to progress
+#   - optional: Can be completed but not required
+#   - recommended: Strongly suggested but not required
+#   - conditional: Required only if certain conditions met (e.g., if_has_ui)
+#
+# Completion Status:
+#   - {file-path}: File created/found (e.g., "docs/product-brief.md")
+#   - skipped: Optional/conditional workflow that was skipped
+
+generated: "2025-12-21"
+project: "forkMonkey"
+project_type: "web-application"
+selected_track: "bmad-method"
+field_type: "brownfield"
+workflow_path: "method-brownfield.yaml"
+
+workflow_status:
+  # Prerequisite - Documentation
+  prerequisite:
+    - id: document-project
+      status: "_bmad-output/index.md"
+      completed: "2025-12-21"
+      agent: analyst
+      command: "@bmad/bmm/workflows/document-project"
+      purpose: "Understand existing codebase before planning"
+      outputs:
+        - "_bmad-output/index.md"
+        - "_bmad-output/project-overview.md"
+        - "_bmad-output/architecture.md"
+        - "_bmad-output/source-tree-analysis.md"
+        - "_bmad-output/development-guide.md"
+
+  # Phase 0 - Discovery (Optional)
+  phase_0_discovery:
+    - id: brainstorm
+      status: optional
+      included: true
+      agent: analyst
+      command: "@bmad/bmm/workflows/brainstorm"
+      note: "User selected during workflow-init"
+
+  # Phase 1 - Planning
+  phase_1_planning:
+    - id: prd
+      status: required
+      agent: pm
+      command: "@bmad/bmm/workflows/create-prd"
+      output: "PRD focused on new features/changes"
+
+    - id: create-ux-design
+      status: conditional
+      condition: "if_has_ui"
+      agent: ux-designer
+      command: "@bmad/bmm/workflows/create-ux-design"
+
+  # Phase 2 - Solutioning
+  phase_2_solutioning:
+    - id: create-architecture
+      status: recommended
+      agent: architect
+      command: "@bmad/bmm/workflows/create-architecture"
+      output: "Integration architecture - solution design"
+      note: "HIGHLY RECOMMENDED for brownfield"
+
+    - id: create-epics-and-stories
+      status: required
+      agent: pm
+      command: "@bmad/bmm/workflows/create-epics-and-stories"
+      note: "Break down PRD into implementable epics and stories"
+
+    - id: test-design
+      status: recommended
+      agent: tea
+      command: "@bmad/bmm/workflows/testarch-test-design"
+      output: "System-level testability review"
+
+    - id: implementation-readiness
+      status: required
+      agent: architect
+      command: "@bmad/bmm/workflows/check-implementation-readiness"
+      note: "Validates PRD + Architecture + Epics + UX"
+
+  # Phase 3 - Implementation
+  phase_3_implementation:
+    - id: sprint-planning
+      status: required
+      agent: sm
+      command: "@bmad/bmm/workflows/sprint-planning"
+      note: "Creates sprint plan with stories"
+

@@ -1,0 +1,103 @@
+{
+  "workflow_version": "1.2.0",
+  "timestamps": {
+    "started": "2025-12-21T20:00:00Z",
+    "last_updated": "2025-12-21T20:15:00Z",
+    "completed": "2025-12-21T20:15:00Z"
+  },
+  "mode": "initial_scan",
+  "scan_level": "quick",
+  "project_root": "/Users/roei/dev_workspace/Small Projects/forkMonkey",
+  "output_folder": "_bmad-output",
+  "completed_steps": [
+    {
+      "step": "step_1",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:05:00Z",
+      "summary": "Classified as multi-part with 3 parts: cli, api, dashboard"
+    },
+    {
+      "step": "step_2",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:07:00Z",
+      "summary": "Found 4 project docs + 21 marketing docs"
+    },
+    {
+      "step": "step_3",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:09:00Z",
+      "summary": "Tech stack: Python 3.11 + Flask + Static HTML"
+    },
+    {
+      "step": "step_4",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:10:00Z",
+      "summary": "Quick scan - pattern analysis complete"
+    },
+    {
+      "step": "step_5",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:11:00Z",
+      "summary": "Source tree documented with 8 critical folders"
+    },
+    {
+      "step": "step_6",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:12:00Z",
+      "summary": "Dev/deployment guides extracted"
+    },
+    {
+      "step": "step_7",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:13:00Z",
+      "summary": "Integration architecture documented"
+    },
+    {
+      "step": "step_8",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:14:00Z",
+      "summary": "Architecture document written"
+    },
+    {
+      "step": "step_9",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:14:30Z",
+      "summary": "Supporting docs generated"
+    },
+    {
+      "step": "step_10",
+      "status": "completed",
+      "timestamp": "2025-12-21T20:15:00Z",
+      "summary": "Master index generated"
+    }
+  ],
+  "current_step": "completed",
+  "findings": {
+    "project_classification": {
+      "repository_type": "multi-part",
+      "parts_count": 3,
+      "primary_language": "Python",
+      "architecture_pattern": "CLI + REST API + Static Frontend"
+    },
+    "technology_stack": {
+      "cli": "Python 3.11, Click, Rich, Pydantic",
+      "api": "Flask, Flask-CORS, Gunicorn, PyGithub",
+      "dashboard": "HTML5, CSS3, JavaScript, NES.css"
+    },
+    "existing_docs_count": 25
+  },
+  "project_types": [
+    {"part_id": "cli", "project_type_id": "cli", "display_name": "CLI/Library", "root_path": "src/"},
+    {"part_id": "api", "project_type_id": "backend", "display_name": "Flask API", "root_path": "server/"},
+    {"part_id": "dashboard", "project_type_id": "web", "display_name": "Web Frontend", "root_path": "web/"}
+  ],
+  "outputs_generated": [
+    "project-scan-report.json",
+    "project-overview.md",
+    "source-tree-analysis.md",
+    "architecture.md",
+    "development-guide.md",
+    "index.md"
+  ],
+  "resume_instructions": "Workflow complete"
+}
