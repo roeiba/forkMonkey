@@ -1186,8 +1186,8 @@ body {
 
 .leaderboard-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--space-md);
     padding: var(--space-lg);
 }
 
@@ -1195,6 +1195,89 @@ body {
     font-family: var(--font-display);
     font-size: var(--text-sm);
     color: var(--primary);
+}
+
+/* Leaderboard Controls */
+.leaderboard-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.leaderboard-search input {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    min-width: 200px;
+    transition: all var(--transition-fast);
+}
+
+.leaderboard-search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.leaderboard-search input::placeholder {
+    color: var(--text-muted);
+}
+
+.leaderboard-sort {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.sort-label {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.leaderboard-sort select {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.leaderboard-sort select:hover {
+    border-color: var(--primary);
+}
+
+.find-me-btn {
+    padding: var(--space-sm) var(--space-md);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--bg-primary);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.find-me-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+.leaderboard-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.leaderboard-count {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
 }
 
 .your-rank {
@@ -1205,6 +1288,63 @@ body {
     color: var(--primary);
     font-size: var(--text-sm);
     font-weight: 600;
+}
+
+/* Highlight current user's row */
+.leaderboard-table tr.is-you {
+    background: linear-gradient(90deg, rgba(0, 255, 136, 0.15) 0%, rgba(0, 255, 136, 0.05) 100%);
+    border-left: 3px solid var(--primary);
+}
+
+.leaderboard-table tr.is-you td {
+    position: relative;
+}
+
+.you-badge {
+    display: inline-block;
+    margin-left: var(--space-xs);
+    padding: 2px 6px;
+    background: var(--primary);
+    color: var(--bg-primary);
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Pulse highlight animation for Find Me */
+.leaderboard-table tr.pulse-highlight {
+    animation: pulse-row 0.5s ease-out 3;
+}
+
+@keyframes pulse-row {
+    0%, 100% {
+        background: linear-gradient(90deg, rgba(0, 255, 136, 0.15) 0%, rgba(0, 255, 136, 0.05) 100%);
+    }
+    50% {
+        background: linear-gradient(90deg, rgba(0, 255, 136, 0.4) 0%, rgba(0, 255, 136, 0.2) 100%);
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .leaderboard-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .leaderboard-search input {
+        width: 100%;
+    }
+    
+    .leaderboard-sort {
+        justify-content: space-between;
+    }
+    
+    .find-me-btn {
+        width: 100%;
+    }
 }
 
 .leaderboard-table-container {

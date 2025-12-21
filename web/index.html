@@ -10,17 +10,17 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSQSBJEM60"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-FSQSBJEM60');
     </script>
 
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "up63wco540");
     </script>
     <link rel="icon"
@@ -83,29 +83,29 @@
                     <span class="brand-tagline">YOUR PET THAT LIVES ON GITHUB</span>
                 </div>
 
-            <div class="nav-tabs" id="nav-tabs">
-                <button class="nav-tab active" data-tab="dashboard">
-                    <span class="tab-icon">🏠</span>
-                    <span class="tab-text">Dashboard</span>
-                </button>
-                <button class="nav-tab" data-tab="evolution">
-                    <span class="tab-icon">📜</span>
-                    <span class="tab-text">Evolution</span>
-                </button>
-                <button class="nav-tab" data-tab="community">
-                    <span class="tab-icon">🌍</span>
-                    <span class="tab-text">Community</span>
-                </button>
-                <button class="nav-tab" data-tab="leaderboard">
-                    <span class="tab-icon">🏆</span>
-                    <span class="tab-text">Leaderboard</span>
-                </button>
-                <button class="nav-tab" data-tab="family-tree">
-                    <span class="tab-icon">🌳</span>
-                    <span class="tab-text">Family Tree</span>
-                </button>
+                <div class="nav-tabs" id="nav-tabs">
+                    <button class="nav-tab active" data-tab="dashboard">
+                        <span class="tab-icon">🏠</span>
+                        <span class="tab-text">Dashboard</span>
+                    </button>
+                    <button class="nav-tab" data-tab="evolution">
+                        <span class="tab-icon">📜</span>
+                        <span class="tab-text">Evolution</span>
+                    </button>
+                    <button class="nav-tab" data-tab="community">
+                        <span class="tab-icon">🌍</span>
+                        <span class="tab-text">Community</span>
+                    </button>
+                    <button class="nav-tab" data-tab="leaderboard">
+                        <span class="tab-icon">🏆</span>
+                        <span class="tab-text">Leaderboard</span>
+                    </button>
+                    <button class="nav-tab" data-tab="family-tree">
+                        <span class="tab-icon">🌳</span>
+                        <span class="tab-text">Family Tree</span>
+                    </button>
+                </div>
             </div>
-        </div>
 
             <div class="nav-stats">
                 <div class="quick-stat" title="GitHub Stars">
@@ -135,10 +135,10 @@
                         <div class="monkey-showcase">
                             <div class="monkey-glow"></div>
                             <div class="monkey-frame" id="monkey-frame">
-                <div class="loading-state">
-                    <div class="loader"></div>
-                    <p class="loading-message">🐵 Waking up your monkey...</p>
-                </div>
+                                <div class="loading-state">
+                                    <div class="loader"></div>
+                                    <p class="loading-message">🐵 Waking up your monkey...</p>
+                                </div>
                             </div>
                         </div>
 
@@ -274,7 +274,7 @@
                             </div>
                         </div>
                         <p class="last-updated" id="network-updated">Last scan: -</p>
-                        
+
                         <!-- Social Proof Bar -->
                         <div class="social-proof-bar">
                             <div class="proof-item">
@@ -348,8 +348,26 @@
                 <div class="leaderboard-layout">
                     <div class="leaderboard-header glass-panel">
                         <h2>🏆 Rarity Leaderboard</h2>
+                        <div class="leaderboard-controls">
+                            <div class="leaderboard-search">
+                                <input type="text" id="leaderboard-search" placeholder="🔍 Search by username..." />
+                            </div>
+                            <div class="leaderboard-sort">
+                                <span class="sort-label">Sort by:</span>
+                                <select id="leaderboard-sort" onchange="ForkMonkey.sortLeaderboard(this.value)">
+                                    <option value="rarity">🏆 Rarity (High → Low)</option>
+                                    <option value="age">👴 Age (OG Status!)</option>
+                                    <option value="generation">🧬 Generation</option>
+                                    <option value="mutations">🔬 Mutations</option>
+                                </select>
+                            </div>
+                            <button class="find-me-btn" onclick="ForkMonkey.findMeOnLeaderboard()">
+                                📍 Find Me
+                            </button>
+                        </div>
                         <div class="leaderboard-meta">
                             <span id="leaderboard-your-rank" class="your-rank">Your rank: -</span>
+                            <span id="leaderboard-count" class="leaderboard-count"></span>
                         </div>
                     </div>
 
@@ -390,8 +408,9 @@
                         </div>
                         <div class="tree-legend">
                             <span class="legend-item"><span class="dot root"></span> Root</span>
-                            <span class="legend-item"><span class="dot fork"></span> Fork</span>
-                            <span class="legend-item"><span class="dot current"></span> You</span>
+                            <span class="legend-item"><span class="dot fork degree-1"></span> 1st Degree</span>
+                            <span class="legend-item"><span class="dot fork degree-2"></span> 2nd Degree</span>
+                            <span class="legend-item"><span class="dot fork degree-3"></span> 3rd Degree</span>
                         </div>
                     </div>
 
@@ -420,7 +439,7 @@
                 <div id="community-warning" class="community-warning" style="display: none;">
                     ⚠️ GitHub Token missing. Showing demo data only.
                 </div>
-                
+
                 <div class="community-grid" id="community-grid">
                     <div class="loading-spinner">
                         <p>SCANNING NETWORK...</p>

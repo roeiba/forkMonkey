@@ -213,13 +213,13 @@ const ForkMonkey = {
                 const forksEl = document.getElementById('nav-forks');
                 if (starsEl) starsEl.textContent = this.formatNumber(data.stargazers_count);
                 if (forksEl) forksEl.textContent = this.formatNumber(data.forks_count);
-                
+
                 // Update social proof bar
                 const proofStars = document.getElementById('proof-stars');
                 const proofForks = document.getElementById('proof-forks');
                 if (proofStars) proofStars.textContent = `⭐ ${this.formatNumber(data.stargazers_count)} stars`;
                 if (proofForks) proofForks.textContent = `🍴 ${this.formatNumber(data.forks_count)} monkeys`;
-                
+
                 // Store for later use
                 this.githubStats = data;
             }
@@ -327,7 +327,7 @@ const ForkMonkey = {
             const streak = this.calculateEvolutionStreak(history);
             const streakEl = document.getElementById('stat-streak');
             streakEl.textContent = `${streak} day${streak !== 1 ? 's' : ''}`;
-            
+
             // Add fire effect for active streaks
             const streakCard = streakEl.closest('.streak-card');
             if (streak >= 7) {
@@ -338,7 +338,7 @@ const ForkMonkey = {
 
             // Render traits
             this.renderTraits(stats.traits);
-            
+
             // Render achievements
             this.renderAchievements(stats, dna);
         }
@@ -436,7 +436,7 @@ const ForkMonkey = {
         // Check if there was an evolution today or yesterday (streak is still active)
         const today = new Date().toISOString().split('T')[0];
         const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-        
+
         const mostRecent = evolutionDates[0];
         if (mostRecent !== today && mostRecent !== yesterday) {
             return 0; // Streak broken
@@ -448,7 +448,7 @@ const ForkMonkey = {
             const current = new Date(evolutionDates[i - 1]);
             const previous = new Date(evolutionDates[i]);
             const diffDays = Math.round((current - previous) / 86400000);
-            
+
             if (diffDays === 1) {
                 streak++;
             } else {
@@ -465,9 +465,9 @@ const ForkMonkey = {
     renderAchievements(stats, dna) {
         const container = document.getElementById('achievements-icons');
         const countEl = document.getElementById('achievements-count');
-        
+
         if (!container) return;
-        
+
         // Achievement definitions (client-side version)
         const achievements = [
             { key: 'first_hatch', icon: '🥚', title: 'First Hatch', check: () => true },
@@ -483,14 +483,14 @@ const ForkMonkey = {
             { key: 'gen_2', icon: '2️⃣', title: 'Second Gen', check: () => (stats?.generation || 1) >= 2 },
             { key: 'parent', icon: '👶', title: 'Proud Parent (1+ fork)', check: () => (stats?.children_count || 0) >= 1 },
         ];
-        
+
         const unlocked = achievements.filter(a => a.check());
-        
+
         // Update count
         if (countEl) {
             countEl.textContent = `${unlocked.length}/${achievements.length}`;
         }
-        
+
         // Render icons
         container.innerHTML = achievements.map(achievement => {
             const isUnlocked = achievement.check();
@@ -808,9 +808,10 @@ const ForkMonkey = {
     /**
      * Render Leaderboard
      */
-    renderLeaderboard() {
+    renderLeaderboard(sortBy = 'rarity', searchQuery = '') {
         const tbody = document.getElementById('leaderboard-body');
         const leaderboard = this.data.leaderboard;
+        const countEl = document.getElementById('leaderboard-count');
 
         if (!leaderboard || !leaderboard.rankings || leaderboard.rankings.length === 0) {
             tbody.innerHTML = `
@@ -827,16 +828,64 @@ const ForkMonkey = {
             return;
         }
 
-        tbody.innerHTML = leaderboard.rankings.map(entry => {
-            const rankDisplay = this.getRankDisplay(entry.rank);
+        // Get current repo name for highlighting
+        const currentRepo = this.getCurrentRepoName();
+
+        // Filter by search query
+        let filteredRankings = leaderboard.rankings;
+        if (searchQuery) {
+            const query = searchQuery.toLowerCase();
+            filteredRankings = filteredRankings.filter(entry =>
+                entry.owner.toLowerCase().includes(query) ||
+                entry.repo.toLowerCase().includes(query)
+            );
+        }
+
+        // Sort rankings
+        const sortedRankings = [...filteredRankings].sort((a, b) => {
+            switch (sortBy) {
+                case 'age':
+                    return (b.age_days || 0) - (a.age_days || 0); // Oldest first (OG status!)
+                case 'generation':
+                    return (a.generation || 1) - (b.generation || 1); // Gen 1 first
+                case 'mutations':
+                    return (b.mutation_count || 0) - (a.mutation_count || 0); // Most mutations first
+                case 'rarity':
+                default:
+                    return (b.rarity_score || 0) - (a.rarity_score || 0); // Highest rarity first
+            }
+        });
+
+        // Update count display
+        if (countEl) {
+            const total = leaderboard.rankings.length;
+            const showing = sortedRankings.length;
+            countEl.textContent = searchQuery ? `Showing ${showing} of ${total}` : `${total} monkeys`;
+        }
+
+        // Render table
+        tbody.innerHTML = sortedRankings.map((entry, index) => {
+            const rank = index + 1;
+            const rankDisplay = this.getRankDisplay(rank);
             const svgContent = entry.monkey_svg
                 ? entry.monkey_svg
                 : '<div style="font-size: 1.5rem;">🐵</div>';
 
+            // Check if this is the current user's monkey
+            const isCurrentUser = currentRepo &&
+                (`${entry.owner}/${entry.repo}`.toLowerCase() === currentRepo.toLowerCase() ||
+                    entry.owner.toLowerCase() === currentRepo.split('/')[0]?.toLowerCase());
+
+            const rowClass = [
+                rank <= 3 ? 'top-3' : '',
+                isCurrentUser ? 'is-you highlight-row' : ''
+            ].filter(Boolean).join(' ');
+
             return `
-                <tr class="${entry.rank <= 3 ? 'top-3' : ''}">
+                <tr class="${rowClass}" data-owner="${entry.owner}">
                     <td class="rank-col">
                         ${rankDisplay}
+                        ${isCurrentUser ? '<span class="you-badge">YOU</span>' : ''}
                     </td>
                     <td class="monkey-col">
                         <div class="monkey-preview">${svgContent}</div>
@@ -854,6 +903,73 @@ const ForkMonkey = {
                 </tr>
             `;
         }).join('');
+
+        // Setup search listener (only once)
+        this.setupLeaderboardSearch();
+    },
+
+    /**
+     * Get current repo name from URL or config
+     */
+    getCurrentRepoName() {
+        // Try to get from URL (GitHub Pages)
+        const hostname = window.location.hostname;
+        if (hostname.includes('github.io')) {
+            const parts = hostname.split('.');
+            const owner = parts[0];
+            const pathParts = window.location.pathname.split('/').filter(Boolean);
+            const repo = pathParts[0] || 'forkMonkey';
+            return `${owner}/${repo}`;
+        }
+        // Default for local dev
+        return 'roeiba/forkMonkey';
+    },
+
+    /**
+     * Setup leaderboard search functionality
+     */
+    setupLeaderboardSearch() {
+        const searchInput = document.getElementById('leaderboard-search');
+        if (!searchInput || searchInput.dataset.initialized) return;
+
+        searchInput.dataset.initialized = 'true';
+        let debounceTimer;
+
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                const sortSelect = document.getElementById('leaderboard-sort');
+                const sortBy = sortSelect?.value || 'rarity';
+                this.renderLeaderboard(sortBy, e.target.value);
+                this.trackEvent('leaderboard_search', { query: e.target.value });
+            }, 300);
+        });
+    },
+
+    /**
+     * Sort leaderboard by criteria
+     */
+    sortLeaderboard(sortBy) {
+        const searchInput = document.getElementById('leaderboard-search');
+        const searchQuery = searchInput?.value || '';
+        this.renderLeaderboard(sortBy, searchQuery);
+        this.trackEvent('leaderboard_sort', { sort_by: sortBy });
+    },
+
+    /**
+     * Find current user on leaderboard
+     */
+    findMeOnLeaderboard() {
+        const row = document.querySelector('.leaderboard-table .is-you');
+        if (row) {
+            row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            row.classList.add('pulse-highlight');
+            setTimeout(() => row.classList.remove('pulse-highlight'), 2000);
+            this.showToast('📍 Found you!', 'success');
+        } else {
+            this.showToast('🔍 Your monkey not found in leaderboard', 'info');
+        }
+        this.trackEvent('leaderboard_find_me');
     },
 
     /**
@@ -867,42 +983,106 @@ const ForkMonkey = {
     },
 
     /**
-     * Render Family Tree
-     */
+ * Render Family Tree with nested degrees (1st, 2nd, 3rd degree siblings)
+ */
     renderFamilyTree() {
         const canvas = document.getElementById('family-tree-canvas');
         const tree = this.data.familyTree;
 
         if (!tree || !tree.nodes || tree.nodes.length === 0) {
             canvas.innerHTML = `
-                <div class="empty-state">
-                    <div class="empty-state-icon">🌳</div>
-                    <div class="empty-state-title">No Family Tree Data</div>
-                    <div class="empty-state-text">Fork genealogy updates daily.</div>
-                </div>
-            `;
+            <div class="empty-state">
+                <div class="empty-state-icon">🌳</div>
+                <div class="empty-state-title">No Family Tree Data</div>
+                <div class="empty-state-text">Fork genealogy updates daily.</div>
+            </div>
+        `;
             return;
         }
 
-        // Simple hierarchical layout
-        const rootNode = tree.nodes.find(n => n.is_root);
-        const childNodes = tree.nodes.filter(n => !n.is_root);
+        // Group nodes by degree
+        const nodesByDegree = {
+            0: [], // root
+            1: [], // 1st degree (direct forks)
+            2: [], // 2nd degree (forks of forks)
+            3: []  // 3rd degree
+        };
 
-        let html = '<div style="display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px;">';
+        tree.nodes.forEach(node => {
+            const degree = node.degree ?? (node.is_root ? 0 : 1);
+            if (degree in nodesByDegree) {
+                nodesByDegree[degree].push(node);
+            }
+        });
 
-        // Root node
-        if (rootNode) {
-            html += this.createTreeNode(rootNode, 'root');
+        let html = '<div class="tree-hierarchy">';
+
+        // Root node (degree 0)
+        if (nodesByDegree[0].length > 0) {
+            html += '<div class="tree-level level-root">';
+            html += '<div class="level-label">🌳 Root</div>';
+            html += '<div class="level-nodes">';
+            nodesByDegree[0].forEach(node => {
+                html += this.createTreeNode(node, 'root', 0);
+            });
+            html += '</div></div>';
         }
 
-        // Children in a row
-        if (childNodes.length > 0) {
-            html += '<div style="width: 2px; height: 40px; background: var(--border-light);"></div>';
-            html += '<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">';
-            childNodes.slice(0, 20).forEach(node => {
-                html += this.createTreeNode(node, 'fork');
+        // Connector line
+        if (nodesByDegree[1].length > 0) {
+            html += '<div class="tree-connector"></div>';
+        }
+
+        // 1st degree forks
+        if (nodesByDegree[1].length > 0) {
+            html += '<div class="tree-level level-1">';
+            html += `<div class="level-label">🍴 1st Degree <span class="level-count">(${nodesByDegree[1].length})</span></div>`;
+            html += '<div class="level-nodes">';
+            nodesByDegree[1].slice(0, 15).forEach(node => {
+                html += this.createTreeNode(node, 'fork', 1);
             });
-            html += '</div>';
+            if (nodesByDegree[1].length > 15) {
+                html += `<div class="tree-node-more">+${nodesByDegree[1].length - 15} more</div>`;
+            }
+            html += '</div></div>';
+        }
+
+        // Connector line
+        if (nodesByDegree[2].length > 0) {
+            html += '<div class="tree-connector"></div>';
+        }
+
+        // 2nd degree forks (forks of forks)
+        if (nodesByDegree[2].length > 0) {
+            html += '<div class="tree-level level-2">';
+            html += `<div class="level-label">🌿 2nd Degree <span class="level-count">(${nodesByDegree[2].length})</span></div>`;
+            html += '<div class="level-nodes">';
+            nodesByDegree[2].slice(0, 12).forEach(node => {
+                html += this.createTreeNode(node, 'fork', 2);
+            });
+            if (nodesByDegree[2].length > 12) {
+                html += `<div class="tree-node-more">+${nodesByDegree[2].length - 12} more</div>`;
+            }
+            html += '</div></div>';
+        }
+
+        // Connector line
+        if (nodesByDegree[3].length > 0) {
+            html += '<div class="tree-connector"></div>';
+        }
+
+        // 3rd degree forks
+        if (nodesByDegree[3].length > 0) {
+            html += '<div class="tree-level level-3">';
+            html += `<div class="level-label">🌱 3rd Degree <span class="level-count">(${nodesByDegree[3].length})</span></div>`;
+            html += '<div class="level-nodes">';
+            nodesByDegree[3].slice(0, 10).forEach(node => {
+                html += this.createTreeNode(node, 'fork', 3);
+            });
+            if (nodesByDegree[3].length > 10) {
+                html += `<div class="tree-node-more">+${nodesByDegree[3].length - 10} more</div>`;
+            }
+            html += '</div></div>';
         }
 
         html += '</div>';
@@ -912,15 +1092,17 @@ const ForkMonkey = {
     /**
      * Create a tree node element
      */
-    createTreeNode(node, type) {
+    createTreeNode(node, type, degree) {
         const svgContent = node.monkey_svg
             ? node.monkey_svg
             : '<div style="font-size: 1.5rem;">🐵</div>';
 
+        const degreeClass = degree !== undefined ? `degree-${degree}` : '';
+
         return `
             <a href="${node.url}" target="_blank" style="text-decoration: none;">
                 <div class="tree-node" style="position: relative;">
-                    <div class="tree-node-circle ${type}">
+                    <div class="tree-node-circle ${type} ${degreeClass}">
                         ${svgContent}
                     </div>
                     <div class="tree-node-label">${node.owner}</div>
@@ -1045,7 +1227,7 @@ const ForkMonkey = {
         const rarity = (stats.rarity_score || 0).toFixed(1);
         const generation = stats.generation || 1;
         const ageDays = stats.age_days || 0;
-        
+
         const tweetText = `Check out my ForkMonkey! 🐵
 
 Rarity: ${rarity}/100
@@ -1060,7 +1242,7 @@ Fork yours free: https://github.com/roeiba/forkMonkey
 
         const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
         window.open(tweetUrl, '_blank', 'width=550,height=420');
-        
+
         this.trackEvent('share_clicked', { platform: 'twitter' });
         this.showToast('🐦 Opening Twitter...', 'success');
     },
@@ -1361,7 +1543,7 @@ https://github.com/roeiba/forkMonkey
      */
     selectAdoptionMethod(method) {
         this.adoption.method = method;
-        
+
         // Track method selection
         this.trackEvent('adoption_method_selected', { method });
 
