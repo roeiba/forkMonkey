@@ -66,28 +66,19 @@ const ForkMonkey = {
         this.showToast('🐵 ForkMonkey loaded!', 'success');
     },
 
-    /**
-     * Get base path for data files
-     */
-    getBasePath() {
-        const isGitHubPages = window.location.hostname.includes('github.io');
-        return isGitHubPages ? '' : '/';
-    },
 
     /**
      * Load all static JSON data files
      */
     async loadAllData() {
-        const basePath = this.getBasePath();
-
         const files = [
-            ['dna', `${basePath}monkey_data/dna.json`],
-            ['stats', `${basePath}monkey_data/stats.json`],
-            ['history', `${basePath}monkey_data/history.json`],
-            ['community', `${basePath}community_data.json`],
-            ['leaderboard', `${basePath}leaderboard.json`],
-            ['familyTree', `${basePath}family_tree.json`],
-            ['networkStats', `${basePath}network_stats.json`]
+            ['dna', `monkey_data/dna.json`],
+            ['stats', `monkey_data/stats.json`],
+            ['history', `monkey_data/history.json`],
+            ['community', `community_data.json`],
+            ['leaderboard', `leaderboard.json`],
+            ['familyTree', `family_tree.json`],
+            ['networkStats', `network_stats.json`]
         ];
 
         const results = await Promise.allSettled(
@@ -212,10 +203,9 @@ const ForkMonkey = {
      */
     async loadMonkeySVG() {
         const frame = document.getElementById('monkey-frame');
-        const basePath = this.getBasePath();
 
         try {
-            const response = await fetch(`${basePath}monkey_data/monkey.svg`);
+            const response = await fetch('monkey_data/monkey.svg');
             if (response.ok) {
                 const svgText = await response.text();
                 frame.innerHTML = svgText;
@@ -342,8 +332,6 @@ const ForkMonkey = {
      * @param {string|null} svgFilename - Direct SVG filename if available
      */
     async getEvolutionSvg(timestamp, svgFilename = null) {
-        const basePath = this.getBasePath();
-
         // Check cache first
         if (!this.svgCache) this.svgCache = {};
 
@@ -367,7 +355,7 @@ const ForkMonkey = {
             return this.svgCache[filename];
         }
 
-        const svgPath = `${basePath}monkey_evolution/${filename}`;
+        const svgPath = 'monkey_evolution/${filename}';
 
         try {
             const response = await fetch(svgPath);
