@@ -1,24 +1,24 @@
 {
-  "generation": 1,
-  "parent_id": null,
-  "dna_hash": "4d4e409ced3bcbd4",
+  "generation": 2,
+  "parent_id": "8ff0b92d86629dc4",
+  "dna_hash": "7b1cda6d518c6e60",
   "mutation_count": 0,
-  "birth_timestamp": 105189,
+  "birth_timestamp": 744832,
   "traits": {
     "body_color": {
-      "value": "golden",
-      "rarity": "uncommon",
-      "gene_sequence": "158495e5"
+      "value": "genesis_gold",
+      "rarity": "legendary",
+      "gene_sequence": "2c527085"
     },
     "face_expression": {
-      "value": "mischievous",
-      "rarity": "uncommon",
-      "gene_sequence": "d6a9b234"
+      "value": "cosmic",
+      "rarity": "legendary",
+      "gene_sequence": "5ec4987e"
     },
     "accessory": {
-      "value": "headphones",
+      "value": "sunglasses",
       "rarity": "uncommon",
-      "gene_sequence": "c1193660"
+      "gene_sequence": "128d27c9"
     },
     "pattern": {
       "value": "gradient",
@@ -26,15 +26,15 @@
       "gene_sequence": "8f053269"
     },
     "background": {
-      "value": "volcano",
-      "rarity": "rare",
-      "gene_sequence": "a35dd45b"
+      "value": "forest",
+      "rarity": "uncommon",
+      "gene_sequence": "edc1a4e4"
     },
     "special": {
-      "value": "glow",
+      "value": "sparkles",
       "rarity": "uncommon",
-      "gene_sequence": "0903c0f5"
+      "gene_sequence": "18ebc4a5"
     }
   },
-  "rarity_score": 23.333333333333332
+  "rarity_score": 45.0
 }
