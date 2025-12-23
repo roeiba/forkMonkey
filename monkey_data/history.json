@@ -509,6 +509,23 @@
       },
       "story": "Your monkey evolved! Changes: background: city \u2192 mountains",
       "svg_filename": "2025-12-23_00-16_monkey.svg"
+    },
+    {
+      "timestamp": "2025-12-23T07:52:30.401216",
+      "dna_hash": "ecaf478067274a31",
+      "generation": 1,
+      "mutation_count": 0,
+      "rarity_score": 28.333333333333332,
+      "traits": {
+        "body_color": "copper",
+        "face_expression": "cool",
+        "accessory": "alpha_crown",
+        "pattern": "gradient",
+        "background": "sunset",
+        "special": "none"
+      },
+      "story": "\ud83c\udf89 Your monkey was born!",
+      "svg_filename": "2025-12-23_07-52_monkey.svg"
     }
   ]
 }
