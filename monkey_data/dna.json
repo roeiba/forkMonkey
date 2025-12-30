@@ -1,19 +1,19 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "3bab70648d15445e",
-  "mutation_count": 8,
-  "birth_timestamp": 463785,
+  "dna_hash": "1fc3679bbb7d211c",
+  "mutation_count": 0,
+  "birth_timestamp": 210985,
   "traits": {
     "body_color": {
-      "value": "purple",
-      "rarity": "rare",
-      "gene_sequence": "aec2c87b"
+      "value": "tan",
+      "rarity": "common",
+      "gene_sequence": "11949536"
     },
     "face_expression": {
-      "value": "curious",
+      "value": "sleepy",
       "rarity": "common",
-      "gene_sequence": "7d0bf056"
+      "gene_sequence": "399185f3"
     },
     "accessory": {
       "value": "bandana",
@@ -21,20 +21,20 @@
       "gene_sequence": "eef7e9dc"
     },
     "pattern": {
-      "value": "swirls",
-      "rarity": "uncommon",
-      "gene_sequence": "77089b66"
+      "value": "fractals",
+      "rarity": "rare",
+      "gene_sequence": "0021f769"
     },
     "background": {
-      "value": "space",
-      "rarity": "rare",
-      "gene_sequence": "cf6b0483"
+      "value": "blue_sky",
+      "rarity": "common",
+      "gene_sequence": "1893587b"
     },
     "special": {
-      "value": "energy",
-      "rarity": "rare",
-      "gene_sequence": "adb72200"
+      "value": "none",
+      "rarity": "common",
+      "gene_sequence": "9f7c3055"
     }
   },
-  "rarity_score": 31.666666666666664
+  "rarity_score": 16.666666666666664
 }
