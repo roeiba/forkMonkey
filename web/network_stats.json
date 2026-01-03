@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-02T00:15:19.687153+00:00",
+  "last_updated": "2026-01-03T00:14:48.952708+00:00",
   "total_monkeys": 34,
   "active_today": 14,
   "generations": {
     "1": 15,
     "2": 19
   },
-  "avg_rarity": 22.89,
+  "avg_rarity": 22.99,
   "max_rarity": 53.33,
   "min_rarity": 10.0,
   "rarest_trait": {
@@ -17,11 +17,11 @@
   "most_common_trait": {
     "trait": "special",
     "value": "none",
-    "count": 23
+    "count": 22
   },
   "trait_distribution": {
     "body_color": {
-      "tan": 10,
+      "tan": 9,
       "prismatic": 2,
       "bronze": 3,
       "genesis_gold": 1,
@@ -34,7 +34,7 @@
       "brown": 1,
       "blue": 2,
       "holographic": 3,
-      "golden": 1
+      "golden": 2
     },
     "face_expression": {
       "sleepy": 7,
@@ -54,12 +54,12 @@
     },
     "accessory": {
       "bow": 4,
-      "simple_hat": 7,
+      "simple_hat": 6,
       "crown": 1,
       "jetpack": 1,
       "sunglasses": 2,
       "wings": 1,
-      "none": 7,
+      "none": 8,
       "bandana": 4,
       "laser_eyes": 2,
       "headphones": 4,
@@ -68,13 +68,14 @@
     "pattern": {
       "fractals": 2,
       "spots": 6,
-      "stars": 6,
+      "stars": 5,
       "lightning": 1,
       "diamonds": 3,
       "gradient": 5,
       "stripes": 3,
       "swirls": 4,
-      "solid": 4
+      "solid": 4,
+      "hearts": 1
     },
     "background": {
       "blue_sky": 4,
@@ -91,12 +92,12 @@
       "aurora": 1
     },
     "special": {
-      "none": 23,
+      "none": 22,
       "transcendent": 1,
       "energy": 3,
       "glow": 1,
       "sparkles": 1,
-      "shadow": 4,
+      "shadow": 5,
       "aura": 1
     }
   }
