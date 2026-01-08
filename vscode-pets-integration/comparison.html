@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fork Monkey Experiments Comparison</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .experiment {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        .experiment h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 15px;
+        }
+        .preview-area {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preview-area img {
+            image-rendering: pixelated;
+            width: 111px;
+            height: 101px;
+        }
+        .stats {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+        .stat-label {
+            font-weight: bold;
+            opacity: 0.8;
+        }
+        .stat-value {
+            font-family: 'Courier New', monospace;
+        }
+        .pros-cons {
+            margin-top: 20px;
+        }
+        .pros-cons h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .pros-cons ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .pros-cons li {
+            margin: 8px 0;
+        }
+        .winner {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid gold;
+        }
+        .winner::before {
+            content: "🏆 ";
+        }
+        .summary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+        .summary h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐵 Fork Monkey Generation Experiments</h1>
+        <div class="subtitle">Comparing Image-Based vs Video-Based Approaches</div>
+        
+        <div class="comparison">
+            <!-- Experiment 1 -->
+            <div class="experiment">
+                <h2>Experiment 1: Image-Based</h2>
+                
+                <div class="preview-area">
+                    <img src="experiment1/assets/fork-monkey/brown_walk_8fps.gif" alt="Experiment 1 Walk">
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-row">
+                        <span class="stat-label">Method:</span>
+                        <span class="stat-value">Individual frame generation</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">AI Model:</span>
+                        <span class="stat-value">Gemini 2.5 Flash Image</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">API Calls:</span>
+                        <span class="stat-value">6 calls (one per frame)</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">File Size:</span>
+                        <span class="stat-value">20.8 KB</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Generation Time:</span>
+                        <span class="stat-value">~3-4 minutes</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Frames:</span>
+                        <span class="stat-value">6 frames</span>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <h3>✅ Pros:</h3>
+                    <ul>
+                        <li>High control over each frame</li>
+                        <li>Can generate specific poses</li>
+                        <li>Character consistency</li>
+                        <li>Multiple animations possible</li>
+                    </ul>
+                    
+                    <h3>❌ Cons:</h3>
+                    <ul>
+                        <li>Multiple API calls needed</li>
+                        <li>Time-consuming</li>
+                        <li>Manual frame sequencing</li>
+                        <li>Larger file sizes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Experiment 2 -->
+            <div class="experiment winner">
+                <h2>Experiment 2: Video-Based</h2>
+                
+                <div class="preview-area">
+                    <img src="experiment2/gifs/brown_walk_8fps.gif" alt="Experiment 2 Walk">
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-row">
+                        <span class="stat-label">Method:</span>
+                        <span class="stat-value">Video generation + extraction</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">AI Model:</span>
+                        <span class="stat-value">Gemini Video Generation</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">API Calls:</span>
+                        <span class="stat-value">1 call (single video)</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">File Size:</span>
+                        <span class="stat-value">12.0 KB</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Generation Time:</span>
+                        <span class="stat-value">~30 seconds</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Frames:</span>
+                        <span class="stat-value">6 frames (from 24 extracted)</span>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <h3>✅ Pros:</h3>
+                    <ul>
+                        <li><strong>Single API call</strong></li>
+                        <li><strong>42% smaller file size</strong></li>
+                        <li><strong>8x faster generation</strong></li>
+                        <li>Smooth, natural animation</li>
+                        <li>Easy to extract different cycles</li>
+                    </ul>
+                    
+                    <h3>❌ Cons:</h3>
+                    <ul>
+                        <li>Less control over specific poses</li>
+                        <li>Limited to motion in video</li>
+                        <li>One animation type per video</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <h2>📊 Summary & Recommendation</h2>
+            
+            <h3>Winner: Experiment 2 (Video-Based) 🏆</h3>
+            
+            <p><strong>Key Advantages:</strong></p>
+            <ul>
+                <li><strong>Efficiency:</strong> 1 API call vs 6 = 83% fewer calls</li>
+                <li><strong>Speed:</strong> 30 seconds vs 4 minutes = 8x faster</li>
+                <li><strong>File Size:</strong> 12 KB vs 21 KB = 42% smaller</li>
+                <li><strong>Cost:</strong> Lower API costs due to single call</li>
+                <li><strong>Quality:</strong> Smooth, natural animation motion</li>
+            </ul>
+            
+            <p><strong>Best Use Cases:</strong></p>
+            <ul>
+                <li><strong>Experiment 1 (Image-Based):</strong> When you need precise control over specific poses (idle, swipe, with_ball animations)</li>
+                <li><strong>Experiment 2 (Video-Based):</strong> When you need motion-based animations (walk, run, jump)</li>
+            </ul>
+            
+            <p><strong>Recommended Hybrid Approach:</strong></p>
+            <ol>
+                <li>Use <strong>video generation</strong> for walk and run animations</li>
+                <li>Use <strong>image generation</strong> for idle, swipe, and with_ball animations</li>
+                <li>This combines the best of both approaches!</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
