@@ -176,6 +176,8 @@ def scan_repo(repo, root_name, degree=0):
         try:
             contents = repo.get_contents("monkey_data/stats.json")
             stats = json.loads(contents.decoded_content.decode())
+            # Always calculate fresh age from repo creation date (fixes Issue #64)
+            stats["age_days"] = age
             monkey_data["monkey_stats"] = stats
         except Exception:
             pass
