@@ -1,8 +1,8 @@
 {
-  "dna_hash": "05fcf05ac7d885d2",
+  "dna_hash": "f95487d22992d692",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 5,
+  "mutation_count": 6,
   "rarity_score": 13.333333333333334,
   "parent_id": null,
   "traits": {
@@ -15,7 +15,7 @@
       "rarity": "uncommon"
     },
     "accessory": {
-      "value": "headphones",
+      "value": "crown",
       "rarity": "uncommon"
     },
     "pattern": {
@@ -32,9 +32,9 @@
     }
   },
   "streak": {
-    "current": 38,
-    "best": 38,
-    "last_date": "2026-01-27"
+    "current": 39,
+    "best": 39,
+    "last_date": "2026-01-28"
   },
-  "last_updated": "2026-01-27T00:18:44.593264"
+  "last_updated": "2026-01-28T00:17:43.149923"
 }
