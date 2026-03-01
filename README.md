@@ -272,6 +272,25 @@ Your child inherits traits from this monkey + gets random mutations.
 
 ---
 
+## 💜 Support the Project
+
+<div align="center">
+
+If you enjoy ForkMonkey, consider buying a banana for the monkeys! 🍌
+
+[![Donate SOL](https://img.shields.io/badge/Donate_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](solana:AnkW4Z5czXxjVs6mwhWjpqMxi9Vjrf4WnVT6EUZ6guNx)
+
+**Solana Address:**
+```
+AnkW4Z5czXxjVs6mwhWjpqMxi9Vjrf4WnVT6EUZ6guNx
+```
+
+*Copy the address above or scan from your Phantom / Solflare wallet* 🐵✨
+
+</div>
+
+---
+
 ## 📜 License
 
 MIT License — Fork, breed, and evolve freely!
