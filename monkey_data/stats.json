@@ -1,26 +1,26 @@
 {
-  "dna_hash": "5880b83ecb60854a",
+  "dna_hash": "e28ca0bde799c118",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 8,
-  "rarity_score": 41.66666666666667,
+  "mutation_count": 0,
+  "rarity_score": 15.0,
   "parent_id": null,
   "traits": {
     "body_color": {
-      "value": "green",
-      "rarity": "rare"
+      "value": "brown",
+      "rarity": "common"
     },
     "face_expression": {
-      "value": "excited",
+      "value": "cool",
       "rarity": "uncommon"
     },
     "accessory": {
-      "value": "jetpack",
-      "rarity": "legendary"
+      "value": "bow",
+      "rarity": "common"
     },
     "pattern": {
-      "value": "lightning",
-      "rarity": "rare"
+      "value": "stars",
+      "rarity": "uncommon"
     },
     "background": {
       "value": "green_grass",
@@ -36,5 +36,5 @@
     "best": 71,
     "last_date": "2026-04-20"
   },
-  "last_updated": "2026-04-20T00:28:49.437789"
+  "last_updated": "2026-04-20T14:06:25.492121"
 }

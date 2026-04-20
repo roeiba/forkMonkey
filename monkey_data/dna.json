@@ -1,29 +1,29 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "5880b83ecb60854a",
-  "mutation_count": 8,
-  "birth_timestamp": 851405,
+  "dna_hash": "e28ca0bde799c118",
+  "mutation_count": 0,
+  "birth_timestamp": 201518,
   "traits": {
     "body_color": {
-      "value": "green",
-      "rarity": "rare",
-      "gene_sequence": "bd474567"
+      "value": "brown",
+      "rarity": "common",
+      "gene_sequence": "d47133ea"
     },
     "face_expression": {
-      "value": "excited",
+      "value": "cool",
       "rarity": "uncommon",
-      "gene_sequence": "1f285d35"
+      "gene_sequence": "abb5bfe3"
     },
     "accessory": {
-      "value": "jetpack",
-      "rarity": "legendary",
-      "gene_sequence": "ec211553"
+      "value": "bow",
+      "rarity": "common",
+      "gene_sequence": "22acdd9b"
     },
     "pattern": {
-      "value": "lightning",
-      "rarity": "rare",
-      "gene_sequence": "1aa0a4dd"
+      "value": "stars",
+      "rarity": "uncommon",
+      "gene_sequence": "67a8d2be"
     },
     "background": {
       "value": "green_grass",
@@ -36,5 +36,5 @@
       "gene_sequence": "db06738c"
     }
   },
-  "rarity_score": 41.66666666666667
+  "rarity_score": 15.0
 }
