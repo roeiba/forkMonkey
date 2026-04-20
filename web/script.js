@@ -28,6 +28,13 @@ const ForkMonkey = {
         customization: {}
     },
 
+    // audit-fix: track page load time so the wizard can never be shown
+    // programmatically before genuine user engagement (prevents "Before you leave"
+    // style popups firing at page load, e.g. from exit-intent mouseleave heuristics
+    // that mis-fire on mobile or on first paint).
+    _pageLoadedAt: null,
+    _MODAL_MIN_ENGAGEMENT_MS: 5000, // wizard must not open within first 5s of load
+
     // Configuration
     config: {
         repoOwner: 'roeiba',
@@ -55,6 +62,10 @@ const ForkMonkey = {
      */
     async init() {
         console.log('%c🐵 ForkMonkey v2.0 Initializing...', 'color: #00ff88; font-size: 16px; font-weight: bold;');
+
+        // audit-fix: record load time so openAdoptionWizard() can guard against
+        // automatic triggers that fire before the user has had a chance to engage
+        this._pageLoadedAt = Date.now();
 
         // Start fun loading messages
         this.startLoadingMessages();
@@ -1460,9 +1471,28 @@ https://roeiba.github.io/forkMonkey/
     // ========================================
 
     /**
-     * Open the adoption wizard modal
+     * Open the adoption wizard modal.
+     *
+     * audit-fix: added `autoTriggered` parameter.  Any code-path that would open
+     * the wizard without a direct user click (e.g. exit-intent mouseleave, timers,
+     * beforeunload hooks) MUST pass `autoTriggered = true`.  Those calls are
+     * silently dropped if the user has been on the page for less than
+     * _MODAL_MIN_ENGAGEMENT_MS (5 s), which prevents the infamous
+     * "Before you leave" popup appearing the instant the page loads.
+     *
+     * Buttons that the user explicitly clicks should call this without arguments
+     * (or with `autoTriggered = false`) and will always work immediately.
      */
-    openAdoptionWizard() {
+    openAdoptionWizard(autoTriggered = false) {
+        // Guard: never auto-show within the first few seconds of page load
+        if (autoTriggered && this._pageLoadedAt) {
+            const elapsed = Date.now() - this._pageLoadedAt;
+            if (elapsed < this._MODAL_MIN_ENGAGEMENT_MS) {
+                console.log('[ForkMonkey] Adoption wizard auto-trigger suppressed: page too new', elapsed, 'ms');
+                return;
+            }
+        }
+
         const modal = document.getElementById('adoption-modal');
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -1471,7 +1501,7 @@ https://roeiba.github.io/forkMonkey/
         this.resetAdoptionWizard();
 
         // Track adoption wizard opened
-        this.trackEvent('adoption_wizard_opened', { source: 'cta' });
+        this.trackEvent('adoption_wizard_opened', { source: autoTriggered ? 'auto' : 'cta' });
 
         this.showToast('🐵 Choose your adoption method!', 'info');
     },
