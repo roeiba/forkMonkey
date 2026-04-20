@@ -430,27 +430,8 @@
             </section>
         </main>
 
-        <!-- Tab Content: Community -->
-        <div id="community" class="tab-content">
-            <div class="panel glass-panel full-width">
-                <div class="panel-header">
-                    <h2>FORKZOO COMMUNITY</h2>
-                    <button class="nes-btn" onclick="loadCommunityData()">
-                        <span>REFRESH DATA</span>
-                    </button>
-                </div>
-                <!-- Warning for GitHub Token -->
-                <div id="community-warning" class="community-warning" style="display: none;">
-                    ⚠️ GitHub Token missing. Showing demo data only.
-                </div>
-
-                <div class="community-grid" id="community-grid">
-                    <div class="loading-spinner">
-                        <p>SCANNING NETWORK...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- audit-fix: removed orphaned duplicate #community div (dead v1 copy-paste)
+             that duplicated the id and called undefined loadCommunityData() -->
 
         <!-- Footer -->
         <footer class="app-footer glass-panel">
