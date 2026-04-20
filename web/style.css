@@ -1266,7 +1266,7 @@ body {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     border: none;
     border-radius: var(--radius-md);
-    color: var(--bg-primary);
+    color: var(--bg-dark); /* audit-fix: was var(--bg-primary) which is undefined → fell back to inherited gray */
     font-size: var(--text-sm);
     font-weight: 600;
     cursor: pointer;
@@ -1314,7 +1314,7 @@ body {
     margin-left: var(--space-xs);
     padding: 2px 6px;
     background: var(--primary);
-    color: var(--bg-primary);
+    color: var(--bg-dark); /* audit-fix: was var(--bg-primary) which is undefined → fell back to inherited gray */
     font-size: 10px;
     font-weight: 700;
     border-radius: var(--radius-sm);
@@ -1765,6 +1765,11 @@ body {
 .app-footer {
     padding: var(--space-md) var(--space-lg);
     margin-top: auto;
+    /* audit-fix: override glass-panel's semi-transparent bg so scrolled content
+       doesn't bleed through and make footer text unreadable */
+    background: rgba(10, 10, 15, 0.97) !important;
+    backdrop-filter: var(--blur-sm);
+    -webkit-backdrop-filter: var(--blur-sm);
 }
 
 .footer-content {
@@ -2090,9 +2095,12 @@ body {
         left: 0;
         right: 0;
         display: flex;
-        background: var(--bg-panel);
-        backdrop-filter: var(--blur-lg);
-        border-top: 1px solid var(--border-subtle);
+        /* audit-fix: was var(--bg-panel) = rgba(15,15,25,0.85) which let content
+           bleed through making the bar unreadable; raise opacity to near-solid */
+        background: rgba(10, 10, 15, 0.97);
+        backdrop-filter: var(--blur-sm);
+        -webkit-backdrop-filter: var(--blur-sm);
+        border-top: 1px solid var(--border-medium);
         padding: var(--space-sm);
         gap: 0;
         border-radius: 0;
