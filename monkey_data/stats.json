@@ -1,34 +1,34 @@
 {
-  "dna_hash": "4240939174fcca9c",
+  "dna_hash": "3b2c75e61823fc38",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 14,
-  "rarity_score": 50.0,
+  "mutation_count": 0,
+  "rarity_score": 30.0,
   "parent_id": null,
   "traits": {
     "body_color": {
-      "value": "purple",
-      "rarity": "rare"
+      "value": "silver",
+      "rarity": "uncommon"
     },
     "face_expression": {
-      "value": "cool",
-      "rarity": "uncommon"
-    },
-    "accessory": {
-      "value": "jetpack",
-      "rarity": "legendary"
-    },
-    "pattern": {
-      "value": "cosmic_dust",
-      "rarity": "legendary"
-    },
-    "background": {
-      "value": "white",
+      "value": "happy",
       "rarity": "common"
     },
-    "special": {
-      "value": "shadow",
+    "accessory": {
+      "value": "headphones",
       "rarity": "uncommon"
+    },
+    "pattern": {
+      "value": "spots",
+      "rarity": "common"
+    },
+    "background": {
+      "value": "forest",
+      "rarity": "uncommon"
+    },
+    "special": {
+      "value": "pioneer_glow",
+      "rarity": "legendary"
     }
   },
   "streak": {
@@ -36,5 +36,5 @@
     "best": 71,
     "last_date": "2026-05-05"
   },
-  "last_updated": "2026-05-05T00:33:51.366897"
+  "last_updated": "2026-05-05T20:15:02.630227"
 }
