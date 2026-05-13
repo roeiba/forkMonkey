@@ -1,105 +1,100 @@
 {
-  "last_updated": "2026-04-23T00:32:25.420915+00:00",
+  "last_updated": "2026-05-13T00:38:18.292740+00:00",
   "total_monkeys": 33,
   "active_today": 11,
   "generations": {
-    "1": 13,
-    "2": 20
+    "1": 14,
+    "2": 19
   },
-  "avg_rarity": 24.8,
-  "max_rarity": 45.0,
+  "avg_rarity": 24.24,
+  "max_rarity": 50.0,
   "min_rarity": 10.0,
   "rarest_trait": {
-    "trait": "accessory",
-    "value": "horns",
+    "trait": "body_color",
+    "value": "crystal",
     "count": 1
   },
   "most_common_trait": {
     "trait": "special",
     "value": "none",
-    "count": 17
+    "count": 16
   },
   "trait_distribution": {
     "body_color": {
-      "green": 2,
+      "brown": 3,
+      "gray": 6,
+      "purple": 2,
       "copper": 3,
-      "tan": 5,
-      "gray": 4,
-      "beige": 4,
-      "blue": 2,
+      "tan": 4,
+      "golden": 2,
+      "beige": 3,
+      "silver": 2,
       "bronze": 2,
       "prismatic": 1,
       "genesis_gold": 1,
-      "silver": 2,
-      "purple": 1,
-      "brown": 2,
-      "rainbow": 1,
-      "holographic": 2,
-      "golden": 1
+      "green": 1,
+      "crystal": 1,
+      "holographic": 2
     },
     "face_expression": {
-      "excited": 4,
-      "happy": 6,
+      "mischievous": 2,
+      "happy": 8,
+      "cool": 2,
+      "excited": 5,
       "sleepy": 3,
-      "curious": 4,
-      "cool": 1,
+      "curious": 2,
       "legendary": 1,
       "cosmic": 1,
       "neutral": 5,
-      "mischievous": 1,
-      "laughing": 1,
-      "enlightened": 1,
-      "wise": 3,
-      "surprised": 2
+      "surprised": 3,
+      "enlightened": 1
     },
     "accessory": {
-      "jetpack": 2,
+      "headphones": 4,
+      "crown": 2,
+      "monocle": 3,
+      "jetpack": 3,
       "halo": 1,
-      "sunglasses": 4,
-      "bow": 3,
-      "simple_hat": 3,
-      "bandana": 3,
-      "none": 7,
+      "sunglasses": 3,
+      "bow": 4,
+      "simple_hat": 2,
       "wings": 1,
-      "laser_eyes": 3,
-      "headphones": 3,
-      "monocle": 1,
-      "crown": 1,
-      "horns": 1
+      "none": 5,
+      "bandana": 3,
+      "laser_eyes": 2
     },
     "pattern": {
-      "lightning": 1,
-      "solid": 3,
-      "flames": 1,
-      "diamonds": 6,
-      "spots": 4,
-      "stripes": 5,
-      "swirls": 5,
-      "aurora": 2,
       "gradient": 4,
-      "stars": 2
+      "swirls": 6,
+      "diamonds": 5,
+      "cosmic_dust": 1,
+      "solid": 4,
+      "flames": 2,
+      "stripes": 4,
+      "spots": 3,
+      "stars": 3,
+      "quantum": 1
     },
     "background": {
-      "green_grass": 6,
-      "white": 5,
-      "aurora": 2,
-      "forest": 3,
+      "mountains": 3,
+      "white": 9,
+      "green_grass": 3,
+      "blue_sky": 4,
+      "city": 1,
+      "sunset": 4,
+      "beach": 4,
+      "forest": 1,
       "space": 2,
-      "sunset": 5,
-      "beach": 3,
-      "blue_sky": 2,
-      "volcano": 2,
-      "city": 2,
-      "heaven": 1
+      "volcano": 2
     },
     "special": {
-      "shadow": 6,
+      "none": 16,
+      "shadow": 5,
       "glow": 4,
-      "none": 17,
       "godlike": 1,
-      "energy": 2,
-      "sparkles": 1,
-      "aura": 2
+      "aura": 3,
+      "energy": 3,
+      "sparkles": 1
     }
   }
 }
