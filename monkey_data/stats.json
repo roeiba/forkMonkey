@@ -1,13 +1,13 @@
 {
-  "dna_hash": "06342bdd4426c52e",
+  "dna_hash": "4925f61140d85391",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 0,
-  "rarity_score": 31.666666666666664,
+  "mutation_count": 2,
+  "rarity_score": 40.0,
   "parent_id": null,
   "traits": {
     "body_color": {
-      "value": "prismatic",
+      "value": "crystal",
       "rarity": "legendary"
     },
     "face_expression": {
@@ -15,8 +15,8 @@
       "rarity": "common"
     },
     "accessory": {
-      "value": "horns",
-      "rarity": "rare"
+      "value": "diamond_chain",
+      "rarity": "legendary"
     },
     "pattern": {
       "value": "spots",
@@ -32,9 +32,9 @@
     }
   },
   "streak": {
-    "current": 7,
+    "current": 8,
     "best": 71,
-    "last_date": "2026-05-20"
+    "last_date": "2026-05-21"
   },
-  "last_updated": "2026-05-20T00:42:05.945485"
+  "last_updated": "2026-05-21T00:42:00.896429"
 }
