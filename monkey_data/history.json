@@ -3212,6 +3212,23 @@
       },
       "story": "Your monkey evolved! Changes: body_color: prismatic \u2192 crystal, accessory: horns \u2192 diamond_chain",
       "svg_filename": "2026-05-21_00-42_monkey.svg"
+    },
+    {
+      "timestamp": "2026-05-22T00:40:21.991342",
+      "dna_hash": "f31efd61df312758",
+      "generation": 1,
+      "mutation_count": 3,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "crystal",
+        "face_expression": "curious",
+        "accessory": "diamond_chain",
+        "pattern": "spots",
+        "background": "sunset",
+        "special": "none"
+      },
+      "story": "Your monkey evolved! Changes: background: blue_sky \u2192 sunset",
+      "svg_filename": "2026-05-22_00-40_monkey.svg"
     }
   ]
 }
