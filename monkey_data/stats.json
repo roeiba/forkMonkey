@@ -1,25 +1,25 @@
 {
-  "dna_hash": "5f98c8af8f94edd0",
+  "dna_hash": "4149f9a413976f6a",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 15,
-  "rarity_score": 40.0,
+  "mutation_count": 0,
+  "rarity_score": 16.666666666666664,
   "parent_id": null,
   "traits": {
     "body_color": {
-      "value": "galaxy",
-      "rarity": "legendary"
+      "value": "gray",
+      "rarity": "common"
     },
     "face_expression": {
-      "value": "sleepy",
+      "value": "curious",
       "rarity": "common"
     },
     "accessory": {
-      "value": "diamond_chain",
-      "rarity": "legendary"
+      "value": "halo",
+      "rarity": "rare"
     },
     "pattern": {
-      "value": "gradient",
+      "value": "spots",
       "rarity": "common"
     },
     "background": {
@@ -36,5 +36,5 @@
     "best": 71,
     "last_date": "2026-06-10"
   },
-  "last_updated": "2026-06-10T00:46:06.557719"
+  "last_updated": "2026-06-10T14:29:13.657129"
 }
