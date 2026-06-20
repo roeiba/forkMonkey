@@ -1,8 +1,8 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "152390845cd138dd",
-  "mutation_count": 3,
+  "dna_hash": "3c38cecb97d6232c",
+  "mutation_count": 4,
   "birth_timestamp": 776146,
   "traits": {
     "body_color": {
@@ -16,9 +16,9 @@
       "gene_sequence": "7d0bf056"
     },
     "accessory": {
-      "value": "halo",
+      "value": "horns",
       "rarity": "rare",
-      "gene_sequence": "8e822e38"
+      "gene_sequence": "f9a6847e"
     },
     "pattern": {
       "value": "spots",
