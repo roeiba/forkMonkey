@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T00:44:19.854859+00:00",
+  "last_updated": "2026-06-27T00:41:46.399832+00:00",
   "source_repo": "roeiba/forkMonkey",
   "total_forks": 31,
   "forks": [
@@ -13,11 +13,11 @@
       "degree_label": "root",
       "parent": null,
       "created_at": "2025-11-20T16:31:42+00:00",
-      "updated_at": "2026-06-25T00:43:01+00:00",
+      "updated_at": "2026-06-26T00:44:25+00:00",
       "monkey_stats": {
         "dna_hash": "b35209dfe9c534f8",
         "generation": 1,
-        "age_days": 217,
+        "age_days": 218,
         "mutation_count": 0,
         "rarity_score": 13.333333333333334,
         "parent_id": null,
@@ -110,7 +110,7 @@
       "monkey_stats": {
         "dna_hash": "3c38cecb97d6232c",
         "generation": 1,
-        "age_days": 3,
+        "age_days": 4,
         "mutation_count": 4,
         "rarity_score": 16.666666666666664,
         "parent_id": null,
@@ -203,7 +203,7 @@
       "monkey_stats": {
         "dna_hash": "ada59fe8a4cb693c",
         "generation": 2,
-        "age_days": 39,
+        "age_days": 40,
         "mutation_count": 0,
         "rarity_score": 33.33333333333333,
         "parent_id": "06342bdd4426c52e",
@@ -296,7 +296,7 @@
       "monkey_stats": {
         "dna_hash": "aafb16d4ae212240",
         "generation": 1,
-        "age_days": 44,
+        "age_days": 45,
         "mutation_count": 6,
         "rarity_score": 13.333333333333334,
         "parent_id": null,
@@ -389,7 +389,7 @@
       "monkey_stats": {
         "dna_hash": "4bb68a6cc7b0f1a1",
         "generation": 2,
-        "age_days": 51,
+        "age_days": 52,
         "mutation_count": 0,
         "rarity_score": 15.0,
         "parent_id": "a26cd3850d6b4075",
@@ -482,7 +482,7 @@
       "monkey_stats": {
         "dna_hash": "4240939174fcca9c",
         "generation": 1,
-        "age_days": 51,
+        "age_days": 52,
         "mutation_count": 14,
         "rarity_score": 50.0,
         "parent_id": null,
@@ -575,7 +575,7 @@
       "monkey_stats": {
         "dna_hash": "67713792f1474e0b",
         "generation": 2,
-        "age_days": 84,
+        "age_days": 85,
         "mutation_count": 0,
         "rarity_score": 20.0,
         "parent_id": "698cdb8f3ca0b10c",
@@ -668,7 +668,7 @@
       "monkey_stats": {
         "dna_hash": "4c28346d1a1f31b3",
         "generation": 2,
-        "age_days": 92,
+        "age_days": 93,
         "mutation_count": 0,
         "rarity_score": 18.333333333333332,
         "parent_id": "56352fe442804682",
@@ -761,7 +761,7 @@
       "monkey_stats": {
         "dna_hash": "24949af1cce530a4",
         "generation": 1,
-        "age_days": 129,
+        "age_days": 130,
         "mutation_count": 19,
         "rarity_score": 28.333333333333332,
         "parent_id": null,
@@ -850,12 +850,12 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2026-01-17T13:24:38+00:00",
-      "updated_at": "2026-06-25T04:00:50+00:00",
+      "updated_at": "2026-06-26T04:08:14+00:00",
       "monkey_stats": {
-        "dna_hash": "37a7c0c82b5e2e32",
+        "dna_hash": "692f23e458e1a815",
         "generation": 2,
-        "age_days": 159,
-        "mutation_count": 93,
+        "age_days": 160,
+        "mutation_count": 95,
         "rarity_score": 28.333333333333332,
         "parent_id": "97f18a5151ced712",
         "traits": {
@@ -876,7 +876,7 @@
             "rarity": "rare"
           },
           "background": {
-            "value": "blue_sky",
+            "value": "green_grass",
             "rarity": "common"
           },
           "special": {
@@ -885,18 +885,18 @@
           }
         },
         "streak": {
-          "current": 187,
-          "best": 187,
-          "last_date": "2026-06-25"
+          "current": 188,
+          "best": 188,
+          "last_date": "2026-06-26"
         },
-        "last_updated": "2026-06-25T04:00:42.171712"
+        "last_updated": "2026-06-26T04:08:09.827951"
       },
-      "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#sky-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#D4A574\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"100\" ry=\"105\" fill=\"url(#aurora-gradient)\" opacity=\"0.2\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<ellipse cx=\"200\" cy=\"265\" rx=\"28\" ry=\"18\" fill=\"#8B0000\"/>\n<ellipse cx=\"200\" cy=\"272\" rx=\"18\" ry=\"7\" fill=\"#FF6B6B\"/>\n<polygon points=\"165,70 180,45 200,65 220,45 235,70\" fill=\"#FFD700\" stroke=\"#DAA520\" stroke-width=\"2\"/><rect x=\"165\" y=\"70\" width=\"70\" height=\"12\" fill=\"#FFD700\" stroke=\"#DAA520\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"200\" r=\"135\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"6\" opacity=\"0.25\"/>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
+      "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#grass-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#D4A574\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"100\" ry=\"105\" fill=\"url(#aurora-gradient)\" opacity=\"0.2\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<ellipse cx=\"200\" cy=\"265\" rx=\"28\" ry=\"18\" fill=\"#8B0000\"/>\n<ellipse cx=\"200\" cy=\"272\" rx=\"18\" ry=\"7\" fill=\"#FF6B6B\"/>\n<polygon points=\"165,70 180,45 200,65 220,45 235,70\" fill=\"#FFD700\" stroke=\"#DAA520\" stroke-width=\"2\"/><rect x=\"165\" y=\"70\" width=\"70\" height=\"12\" fill=\"#FFD700\" stroke=\"#DAA520\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"200\" r=\"135\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"6\" opacity=\"0.25\"/>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {
         "generation": 2,
         "parent_id": "97f18a5151ced712",
-        "dna_hash": "37a7c0c82b5e2e32",
-        "mutation_count": 93,
+        "dna_hash": "692f23e458e1a815",
+        "mutation_count": 95,
         "birth_timestamp": 681998,
         "traits": {
           "body_color": {
@@ -920,9 +920,9 @@
             "gene_sequence": "0021f769"
           },
           "background": {
-            "value": "blue_sky",
+            "value": "green_grass",
             "rarity": "common",
-            "gene_sequence": "1893587b"
+            "gene_sequence": "976ee2e9"
           },
           "special": {
             "value": "glow",
@@ -943,11 +943,11 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-30T13:48:59+00:00",
-      "updated_at": "2026-06-25T03:56:04+00:00",
+      "updated_at": "2026-06-26T04:02:36+00:00",
       "monkey_stats": {
         "dna_hash": "c067c3a1947dc8aa",
         "generation": 2,
-        "age_days": 177,
+        "age_days": 178,
         "mutation_count": 126,
         "rarity_score": 38.333333333333336,
         "parent_id": "1fc3679bbb7d211c",
@@ -978,11 +978,11 @@
           }
         },
         "streak": {
-          "current": 187,
-          "best": 187,
-          "last_date": "2026-06-25"
+          "current": 188,
+          "best": 188,
+          "last_date": "2026-06-26"
         },
-        "last_updated": "2026-06-25T03:55:56.535831"
+        "last_updated": "2026-06-26T04:02:30.899274"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"#2C3E50\"/>\n<rect x=\"0\" y=\"249\" width=\"50\" height=\"151\" fill=\"#1A202C\"/>\n<rect x=\"22\" y=\"259\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"259\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"277\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"277\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"22\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"36\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"60\" y=\"258\" width=\"50\" height=\"142\" fill=\"#1A202C\"/>\n<rect x=\"68\" y=\"268\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"268\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"286\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"286\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"68\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"96\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"120\" y=\"267\" width=\"50\" height=\"133\" fill=\"#1A202C\"/>\n<rect x=\"128\" y=\"277\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"277\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"128\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"142\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"180\" y=\"276\" width=\"50\" height=\"124\" fill=\"#1A202C\"/>\n<rect x=\"202\" y=\"286\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"286\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"202\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"202\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"202\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"202\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"202\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"216\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"240\" y=\"285\" width=\"50\" height=\"115\" fill=\"#1A202C\"/>\n<rect x=\"248\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"295\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"248\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"248\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"248\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"248\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"248\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"276\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"300\" y=\"294\" width=\"50\" height=\"106\" fill=\"#1A202C\"/>\n<rect x=\"308\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"322\" y=\"304\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"308\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"322\" y=\"322\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"308\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"322\" y=\"340\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"308\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"322\" y=\"358\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"308\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"322\" y=\"376\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"360\" y=\"303\" width=\"50\" height=\"97\" fill=\"#1A202C\"/>\n<rect x=\"382\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"396\" y=\"313\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"382\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"396\" y=\"331\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"382\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"396\" y=\"349\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"382\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"396\" y=\"367\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"382\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n<rect x=\"396\" y=\"385\" width=\"6\" height=\"8\" fill=\"#FFD700\" opacity=\"0.6\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#32CD32\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#32CD32\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#32CD32\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#7CFC00\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><text x=\"125\" y=\"125\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"146\" y=\"218\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"167\" y=\"161\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"188\" y=\"254\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"209\" y=\"197\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"230\" y=\"140\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"251\" y=\"233\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text><text x=\"272\" y=\"176\" font-size=\"18\" fill=\"#00CED1\" opacity=\"0.35\">\u25c6</text></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"20\" ry=\"24\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"14\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"8\" fill=\"#000\"/>\n<circle cx=\"167\" cy=\"180\" r=\"5\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"20\" ry=\"24\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"14\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"8\" fill=\"#000\"/>\n<circle cx=\"243\" cy=\"180\" r=\"5\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<path d=\"M170 260 Q200 285 230 260\" stroke=\"#5D2E0C\" stroke-width=\"4\" fill=\"none\"/>\n<path d=\"M147 160 Q162 150 177 160\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n<path d=\"M223 160 Q238 150 253 160\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n<rect x=\"150\" y=\"260\" width=\"20\" height=\"50\" rx=\"5\" fill=\"#555\"/><rect x=\"230\" y=\"260\" width=\"20\" height=\"50\" rx=\"5\" fill=\"#555\"/><ellipse cx=\"160\" cy=\"320\" rx=\"8\" ry=\"15\" fill=\"#FF4500\" opacity=\"0.8\"/><ellipse cx=\"240\" cy=\"320\" rx=\"8\" ry=\"15\" fill=\"#FF4500\" opacity=\"0.8\"/>\n<text x=\"110\" y=\"110\" font-size=\"24\" fill=\"#FFD700\">\u2726</text><text x=\"290\" y=\"110\" font-size=\"24\" fill=\"#FFD700\">\u2726</text><text x=\"110\" y=\"290\" font-size=\"24\" fill=\"#FFD700\">\u2726</text><text x=\"290\" y=\"290\" font-size=\"24\" fill=\"#FFD700\">\u2726</text><text x=\"200\" y=\"70\" font-size=\"24\" fill=\"#FFD700\">\u2726</text>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {
@@ -1036,11 +1036,11 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-24T21:33:43+00:00",
-      "updated_at": "2026-06-25T03:42:19+00:00",
+      "updated_at": "2026-06-26T03:53:06+00:00",
       "monkey_stats": {
         "dna_hash": "0d641b7894be0bbd",
         "generation": 1,
-        "age_days": 183,
+        "age_days": 184,
         "mutation_count": 103,
         "rarity_score": 23.333333333333332,
         "parent_id": null,
@@ -1071,11 +1071,11 @@
           }
         },
         "streak": {
-          "current": 187,
-          "best": 187,
-          "last_date": "2026-06-25"
+          "current": 188,
+          "best": 188,
+          "last_date": "2026-06-26"
         },
-        "last_updated": "2026-06-25T03:42:14.023257"
+        "last_updated": "2026-06-26T03:53:00.964456"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#aurora-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#B87333\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#D4A574\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><circle cx=\"200\" cy=\"200\" r=\"100\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\" opacity=\"0.08\" stroke-dasharray=\"15,10\"/><circle cx=\"200\" cy=\"200\" r=\"75\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\" opacity=\"0.08\" stroke-dasharray=\"15,10\"/><circle cx=\"200\" cy=\"200\" r=\"50\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\" opacity=\"0.08\" stroke-dasharray=\"15,10\"/><circle cx=\"200\" cy=\"200\" r=\"25\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\" opacity=\"0.08\" stroke-dasharray=\"15,10\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"20\" ry=\"24\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"14\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"8\" fill=\"#000\"/>\n<circle cx=\"167\" cy=\"180\" r=\"5\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"20\" ry=\"24\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"14\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"8\" fill=\"#000\"/>\n<circle cx=\"243\" cy=\"180\" r=\"5\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<path d=\"M170 260 Q200 285 230 260\" stroke=\"#5D2E0C\" stroke-width=\"4\" fill=\"none\"/>\n<path d=\"M147 160 Q162 150 177 160\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n<path d=\"M223 160 Q238 150 253 160\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n\n<circle cx=\"200\" cy=\"200\" r=\"135\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"6\" opacity=\"0.25\"/>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 1</text>\n        </g>\n</svg>",
       "monkey_dna": {
@@ -1129,11 +1129,11 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-23T19:04:47+00:00",
-      "updated_at": "2026-06-26T00:41:21+00:00",
+      "updated_at": "2026-06-27T00:38:48+00:00",
       "monkey_stats": {
         "dna_hash": "598aa92dc9dad247",
         "generation": 2,
-        "age_days": 184,
+        "age_days": 185,
         "mutation_count": 107,
         "rarity_score": 36.666666666666664,
         "parent_id": "fbb13284c977d75b",
@@ -1164,11 +1164,11 @@
           }
         },
         "streak": {
-          "current": 183,
-          "best": 183,
-          "last_date": "2026-06-25"
+          "current": 184,
+          "best": 184,
+          "last_date": "2026-06-26"
         },
-        "last_updated": "2026-06-25T00:49:05.402429"
+        "last_updated": "2026-06-26T00:50:43.431551"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#heaven-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#F5F5DC\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#F5F5DC\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#F5F5DC\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#FFFFF0\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><path d=\"M185 130 L215 190 L200 190 L230 250\" stroke=\"#FFD700\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<path d=\"M178 265 Q200 260 225 252\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n<line x1=\"150\" y1=\"155\" x2=\"174\" y2=\"161\" stroke=\"#5D2E0C\" stroke-width=\"3\"/>\n<line x1=\"226\" y1=\"161\" x2=\"250\" y2=\"155\" stroke=\"#5D2E0C\" stroke-width=\"3\"/>\n<circle cx=\"238\" cy=\"185\" r=\"22\" fill=\"none\" stroke=\"#DAA520\" stroke-width=\"3\"/><line x1=\"260\" y1=\"185\" x2=\"290\" y2=\"240\" stroke=\"#DAA520\" stroke-width=\"2\"/>\n<ellipse cx=\"200\" cy=\"340\" rx=\"100\" ry=\"20\" fill=\"#000\" opacity=\"0.2\"/>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {
@@ -1226,7 +1226,7 @@
       "monkey_stats": {
         "dna_hash": "eeffd08d3a8beb35",
         "generation": 2,
-        "age_days": 184,
+        "age_days": 185,
         "mutation_count": 0,
         "rarity_score": 35.0,
         "parent_id": "afd84513c75c7f4a",
@@ -1319,7 +1319,7 @@
       "monkey_stats": {
         "dna_hash": "099ba6f8fbac4674",
         "generation": 2,
-        "age_days": 184,
+        "age_days": 185,
         "mutation_count": 0,
         "rarity_score": 45.0,
         "parent_id": "ecaf478067274a31",
@@ -1412,7 +1412,7 @@
       "monkey_stats": {
         "dna_hash": "7b1cda6d518c6e60",
         "generation": 2,
-        "age_days": 185,
+        "age_days": 186,
         "mutation_count": 0,
         "rarity_score": 45.0,
         "parent_id": "8ff0b92d86629dc4",
@@ -1505,7 +1505,7 @@
       "monkey_stats": {
         "dna_hash": "2d62398031d9ec88",
         "generation": 2,
-        "age_days": 185,
+        "age_days": 186,
         "mutation_count": 0,
         "rarity_score": 26.666666666666668,
         "parent_id": "857f7f65f3c062cf",
@@ -1598,7 +1598,7 @@
       "monkey_stats": {
         "dna_hash": "1cd73b6b050d99b0",
         "generation": 2,
-        "age_days": 185,
+        "age_days": 186,
         "mutation_count": 0,
         "rarity_score": 16.666666666666664,
         "parent_id": "854fc3b38c80144c",
@@ -1691,7 +1691,7 @@
       "monkey_stats": {
         "dna_hash": "829019ccec28b2ae",
         "generation": 2,
-        "age_days": 185,
+        "age_days": 186,
         "mutation_count": 0,
         "rarity_score": 11.666666666666666,
         "parent_id": "5e1e01a4082a4d45",
@@ -1784,7 +1784,7 @@
       "monkey_stats": {
         "dna_hash": "936760b23bb286a1",
         "generation": 2,
-        "age_days": 185,
+        "age_days": 186,
         "mutation_count": 0,
         "rarity_score": 13.333333333333334,
         "parent_id": "27c2b549c111f018",
@@ -1877,7 +1877,7 @@
       "monkey_stats": {
         "dna_hash": "bb5549a365473a51",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 15.0,
         "parent_id": null,
@@ -1965,7 +1965,7 @@
       "monkey_stats": {
         "dna_hash": "2a9053a4554ac588",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 23.333333333333332,
         "parent_id": null,
@@ -2053,7 +2053,7 @@
       "monkey_stats": {
         "dna_hash": "4de42c02c9681a8e",
         "generation": 2,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 30.0,
         "parent_id": "2a9053a4554ac588",
@@ -2141,7 +2141,7 @@
       "monkey_stats": {
         "dna_hash": "e39a0c3465a609f1",
         "generation": 2,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 10.0,
         "parent_id": "4bd4fac7e12fc682",
@@ -2225,12 +2225,12 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-21T20:14:56+00:00",
-      "updated_at": "2026-06-25T01:00:41+00:00",
+      "updated_at": "2026-06-26T01:03:32+00:00",
       "monkey_stats": {
         "dna_hash": "265885e1575bf1e5",
         "generation": 2,
-        "age_days": 186,
-        "mutation_count": 84,
+        "age_days": 187,
+        "mutation_count": 85,
         "rarity_score": 41.66666666666667,
         "parent_id": "dba364f6e0c2ae67",
         "traits": {
@@ -2259,14 +2259,14 @@
             "rarity": "common"
           }
         },
-        "last_updated": "2026-06-25T00:47:14.805826"
+        "last_updated": "2026-06-26T00:48:28.223761"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#grass-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#E8E8E8\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"100\" ry=\"105\" fill=\"url(#aurora-gradient)\" opacity=\"0.2\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"#FF4500\" filter=\"url(#glow)\"/>\n<circle cx=\"162\" cy=\"185\" r=\"10\" fill=\"#FFD700\"/>\n<circle cx=\"162\" cy=\"185\" r=\"4\" fill=\"#FFF\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"#FF4500\" filter=\"url(#glow)\"/>\n<circle cx=\"238\" cy=\"185\" r=\"10\" fill=\"#FFD700\"/>\n<circle cx=\"238\" cy=\"185\" r=\"4\" fill=\"#FFF\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<line x1=\"182\" y1=\"260\" x2=\"218\" y2=\"260\" stroke=\"#5D2E0C\" stroke-width=\"2\"/>\n<path d=\"M110 120 Q200 90 290 120\" stroke=\"#E74C3C\" stroke-width=\"12\" fill=\"none\"/><polygon points=\"105,125 90,160 115,150\" fill=\"#E74C3C\"/>\n\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#4ECDC4\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">UNCOMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {
         "generation": 2,
         "parent_id": "dba364f6e0c2ae67",
         "dna_hash": "265885e1575bf1e5",
-        "mutation_count": 84,
+        "mutation_count": 85,
         "birth_timestamp": 389732,
         "traits": {
           "body_color": {
@@ -2313,11 +2313,11 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-21T18:22:28+00:00",
-      "updated_at": "2026-06-25T01:12:02+00:00",
+      "updated_at": "2026-06-26T01:14:46+00:00",
       "monkey_stats": {
         "dna_hash": "edde0cff5f1f9da4",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 113,
         "rarity_score": 30.0,
         "parent_id": null,
@@ -2347,7 +2347,7 @@
             "rarity": "rare"
           }
         },
-        "last_updated": "2026-06-25T01:11:56.500068"
+        "last_updated": "2026-06-26T01:14:41.380960"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"#006994\"/>\n<circle cx=\"287\" cy=\"153\" r=\"4\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"174\" cy=\"306\" r=\"5\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"61\" cy=\"59\" r=\"6\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"348\" cy=\"212\" r=\"7\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"235\" cy=\"365\" r=\"8\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"122\" cy=\"118\" r=\"9\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"9\" cy=\"271\" r=\"10\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"296\" cy=\"24\" r=\"11\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"183\" cy=\"177\" r=\"4\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"70\" cy=\"330\" r=\"5\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"357\" cy=\"83\" r=\"6\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"244\" cy=\"236\" r=\"7\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"131\" cy=\"389\" r=\"8\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"18\" cy=\"142\" r=\"9\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"305\" cy=\"295\" r=\"10\" fill=\"none\" stroke=\"white\" opacity=\"0.25\"/>\n<circle cx=\"200\" cy=\"200\" r=\"165\" fill=\"none\" stroke=\"#00FFFF\" stroke-width=\"3\" opacity=\"0.25\" stroke-dasharray=\"20,10\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#FF69B4\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#FF69B4\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#FF69B4\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#FFB6C1\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"url(#sky-gradient)\" opacity=\"0.25\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<line x1=\"182\" y1=\"260\" x2=\"218\" y2=\"260\" stroke=\"#5D2E0C\" stroke-width=\"2\"/>\n<rect x=\"155\" y=\"55\" width=\"90\" height=\"18\" rx=\"3\" fill=\"#8B0000\"/><rect x=\"145\" y=\"70\" width=\"110\" height=\"8\" fill=\"#8B0000\"/>\n\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 1</text>\n        </g>\n</svg>",
       "monkey_dna": {
@@ -2405,7 +2405,7 @@
       "monkey_stats": {
         "dna_hash": "87943c063fc49f84",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 11.666666666666666,
         "parent_id": null,
@@ -2493,7 +2493,7 @@
       "monkey_stats": {
         "dna_hash": "cecacf2cd14c8b4a",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 31.666666666666664,
         "parent_id": null,
@@ -2577,12 +2577,12 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-21T10:13:16+00:00",
-      "updated_at": "2026-06-25T04:16:29+00:00",
+      "updated_at": "2026-06-26T04:22:48+00:00",
       "monkey_stats": {
         "dna_hash": "fec4daa852f4afc7",
         "generation": 2,
-        "age_days": 186,
-        "mutation_count": 105,
+        "age_days": 187,
+        "mutation_count": 106,
         "rarity_score": 36.666666666666664,
         "parent_id": "8ef8a18ee3f669b3",
         "traits": {
@@ -2611,14 +2611,14 @@
             "rarity": "common"
           }
         },
-        "last_updated": "2026-06-25T04:16:23.602639"
+        "last_updated": "2026-06-26T04:22:44.216103"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"#708090\"/>\n<polygon points=\"50,400 150,260 250,400\" fill=\"#4A5568\"/>\n<polygon points=\"180,400 280,220 380,400\" fill=\"#2D3748\"/>\n<polygon points=\"145,270 150,260 155,270\" fill=\"white\"/>\n<polygon points=\"275,230 280,220 285,230\" fill=\"white\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"url(#rainbow-body)\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"url(#rainbow-body)\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"url(#rainbow-body)\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#FFD700\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"100\" ry=\"105\" fill=\"url(#aurora-gradient)\" opacity=\"0.2\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<path d=\"M178 265 Q200 260 225 252\" stroke=\"#5D2E0C\" stroke-width=\"3\" fill=\"none\"/>\n<line x1=\"150\" y1=\"155\" x2=\"174\" y2=\"161\" stroke=\"#5D2E0C\" stroke-width=\"3\"/>\n<line x1=\"226\" y1=\"161\" x2=\"250\" y2=\"155\" stroke=\"#5D2E0C\" stroke-width=\"3\"/>\n<path d=\"M125 170 Q125 100 200 90 Q275 100 275 170\" stroke=\"#333\" stroke-width=\"8\" fill=\"none\"/><rect x=\"115\" y=\"155\" width=\"25\" height=\"40\" rx=\"5\" fill=\"#333\"/><rect x=\"260\" y=\"155\" width=\"25\" height=\"40\" rx=\"5\" fill=\"#333\"/>\n\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {
         "generation": 2,
         "parent_id": "8ef8a18ee3f669b3",
         "dna_hash": "fec4daa852f4afc7",
-        "mutation_count": 105,
+        "mutation_count": 106,
         "birth_timestamp": 751522,
         "traits": {
           "body_color": {
@@ -2669,7 +2669,7 @@
       "monkey_stats": {
         "dna_hash": "6b5999c307252477",
         "generation": 1,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 0,
         "rarity_score": 16.666666666666664,
         "parent_id": null,
@@ -2753,11 +2753,11 @@
       "degree_label": "1st degree",
       "parent": "roeiba/forkMonkey",
       "created_at": "2025-12-21T07:30:54+00:00",
-      "updated_at": "2026-06-25T02:30:51+00:00",
+      "updated_at": "2026-06-26T02:33:03+00:00",
       "monkey_stats": {
         "dna_hash": "a6df274ea0c05820",
         "generation": 2,
-        "age_days": 186,
+        "age_days": 187,
         "mutation_count": 113,
         "rarity_score": 15.0,
         "parent_id": "6b5999c307252477",
@@ -2787,7 +2787,7 @@
             "rarity": "uncommon"
           }
         },
-        "last_updated": "2026-06-25T02:30:45.014602"
+        "last_updated": "2026-06-26T02:32:57.452667"
       },
       "monkey_svg": "<svg width=\"400\" height=\"400\" viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n    <filter id=\"shadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n        <feDropShadow dx=\"2\" dy=\"4\" stdDeviation=\"3\" flood-opacity=\"0.3\"/>\n    </filter>\n    <filter id=\"glow\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n        <feGaussianBlur stdDeviation=\"8\" result=\"blur\"/>\n        <feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge>\n    </filter>\n    <linearGradient id=\"rainbow-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"25%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"50%\" stop-color=\"#4ECDC4\"/><stop offset=\"75%\" stop-color=\"#45B7D1\"/>\n        <stop offset=\"100%\" stop-color=\"#DDA0DD\"/>\n    </linearGradient>\n    <radialGradient id=\"galaxy-body\" cx=\"30%\" cy=\"30%\">\n        <stop offset=\"0%\" stop-color=\"#E6E6FA\"/><stop offset=\"50%\" stop-color=\"#9370DB\"/>\n        <stop offset=\"100%\" stop-color=\"#1A0033\"/>\n    </radialGradient>\n    <linearGradient id=\"holo-body\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF00FF\"/><stop offset=\"50%\" stop-color=\"#00FFFF\"/>\n        <stop offset=\"100%\" stop-color=\"#FFFF00\"/>\n    </linearGradient>\n    <linearGradient id=\"sky-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E0F4FF\"/>\n    </linearGradient>\n    <linearGradient id=\"grass-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#90EE90\"/><stop offset=\"100%\" stop-color=\"#228B22\"/>\n    </linearGradient>\n    <linearGradient id=\"sunset-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FF6B6B\"/><stop offset=\"50%\" stop-color=\"#FFE66D\"/>\n        <stop offset=\"100%\" stop-color=\"#4ECDC4\"/>\n    </linearGradient>\n    <linearGradient id=\"aurora-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#0D1B2A\"/><stop offset=\"30%\" stop-color=\"#00FF7F\"/>\n        <stop offset=\"70%\" stop-color=\"#FF00FF\"/><stop offset=\"100%\" stop-color=\"#0D1B2A\"/>\n    </linearGradient>\n    <radialGradient id=\"multiverse-gradient\" cx=\"50%\" cy=\"50%\">\n        <stop offset=\"0%\" stop-color=\"#FFD700\"/><stop offset=\"40%\" stop-color=\"#FF00FF\"/>\n        <stop offset=\"70%\" stop-color=\"#00FFFF\"/><stop offset=\"100%\" stop-color=\"#000\"/>\n    </radialGradient>\n    <linearGradient id=\"rift-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#000\"/><stop offset=\"30%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"50%\" stop-color=\"#00FFFF\"/><stop offset=\"70%\" stop-color=\"#9400D3\"/>\n        <stop offset=\"100%\" stop-color=\"#000\"/>\n    </linearGradient>\n    <linearGradient id=\"heaven-gradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#FFF\"/><stop offset=\"50%\" stop-color=\"#FFD700\" stop-opacity=\"0.3\"/>\n        <stop offset=\"100%\" stop-color=\"#F0F8FF\"/>\n    </linearGradient>\n    <clipPath id=\"head-clip\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\"/></clipPath>\n</defs>\n<rect width=\"400\" height=\"400\" fill=\"url(#grass-gradient)\"/>\n\n<ellipse cx=\"115\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"115\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"115\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"45\" ry=\"50\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"285\" cy=\"140\" rx=\"30\" ry=\"35\" fill=\"#FFB6C1\"/>\n<ellipse cx=\"285\" cy=\"145\" rx=\"18\" ry=\"22\" fill=\"#FF9999\"/>\n<ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"#C0C0C0\" filter=\"url(#shadow)\"/>\n<ellipse cx=\"180\" cy=\"140\" rx=\"50\" ry=\"30\" fill=\"#E8E8E8\" opacity=\"0.3\"/>\n<g clip-path=\"url(#head-clip)\"><ellipse cx=\"200\" cy=\"200\" rx=\"110\" ry=\"115\" fill=\"url(#sky-gradient)\" opacity=\"0.25\"/></g>\n<ellipse cx=\"200\" cy=\"235\" rx=\"70\" ry=\"60\" fill=\"#FFDAB9\"/>\n<ellipse cx=\"200\" cy=\"250\" rx=\"55\" ry=\"40\" fill=\"#DEB887\" opacity=\"0.3\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"22\" ry=\"24\" fill=\"#000\" opacity=\"0.08\"/>\n<ellipse cx=\"162\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"162\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"162\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"166\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<ellipse cx=\"238\" cy=\"185\" rx=\"18\" ry=\"20\" fill=\"white\"/>\n<circle cx=\"238\" cy=\"185\" r=\"12\" fill=\"#3D2314\"/>\n<circle cx=\"238\" cy=\"185\" r=\"6\" fill=\"#000\"/>\n<circle cx=\"242\" cy=\"181\" r=\"4\" fill=\"white\"/>\n<g>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"25\" ry=\"18\" fill=\"#8B4513\"/>\n            <ellipse cx=\"200\" cy=\"230\" rx=\"22\" ry=\"15\" fill=\"#A0522D\"/>\n            <ellipse cx=\"192\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n            <ellipse cx=\"208\" cy=\"230\" rx=\"5\" ry=\"7\" fill=\"#5D2E0C\"/>\n        </g>\n<path d=\"M178 260 Q200 268 222 260\" stroke=\"#5D2E0C\" stroke-width=\"2\" fill=\"none\"/>\n<line x1=\"150\" y1=\"158\" x2=\"174\" y2=\"158\" stroke=\"#5D2E0C\" stroke-width=\"2\"/>\n<line x1=\"226\" y1=\"158\" x2=\"250\" y2=\"158\" stroke=\"#5D2E0C\" stroke-width=\"2\"/>\n<ellipse cx=\"130\" cy=\"130\" rx=\"20\" ry=\"15\" fill=\"#FF69B4\"/><ellipse cx=\"130\" cy=\"130\" rx=\"8\" ry=\"8\" fill=\"#FF1493\"/><polygon points=\"130,115 145,130 130,145\" fill=\"#FF69B4\"/>\n<ellipse cx=\"200\" cy=\"340\" rx=\"100\" ry=\"20\" fill=\"#000\" opacity=\"0.2\"/>\n<g transform=\"translate(325, 15)\">\n            <rect width=\"65\" height=\"22\" rx=\"4\" fill=\"#A0A0A0\" opacity=\"0.9\"/>\n            <text x=\"32\" y=\"15\" font-size=\"8\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\">COMMON</text>\n        </g>\n        <g transform=\"translate(10, 15)\">\n            <rect width=\"45\" height=\"22\" rx=\"4\" fill=\"#333\" opacity=\"0.8\"/>\n            <text x=\"22\" y=\"15\" font-size=\"9\" fill=\"#FFF\" text-anchor=\"middle\" font-family=\"sans-serif\">Gen 2</text>\n        </g>\n</svg>",
       "monkey_dna": {

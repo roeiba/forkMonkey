@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-26T00:44:19.862111+00:00",
+  "last_updated": "2026-06-27T00:41:46.406967+00:00",
   "total_monkeys": 31,
-  "active_today": 8,
+  "active_today": 9,
   "generations": {
     "1": 12,
     "2": 19
@@ -79,9 +79,9 @@
       "quantum": 1
     },
     "background": {
-      "green_grass": 6,
+      "green_grass": 7,
       "sunset": 5,
-      "blue_sky": 4,
+      "blue_sky": 3,
       "white": 7,
       "city": 1,
       "aurora": 1,
