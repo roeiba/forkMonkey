@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-08T02:12:01.534829+00:00",
+  "last_updated": "2026-07-09T02:30:30.798850+00:00",
   "total_monkeys": 31,
   "active_today": 8,
   "generations": {
     "1": 13,
     "2": 18
   },
-  "avg_rarity": 26.08,
+  "avg_rarity": 26.34,
   "max_rarity": 50.0,
   "min_rarity": 10.0,
   "rarest_trait": {
@@ -37,14 +37,14 @@
       "holographic": 1
     },
     "face_expression": {
-      "enlightened": 2,
+      "divine": 1,
       "mischievous": 3,
       "curious": 2,
       "happy": 5,
       "cool": 1,
       "excited": 5,
       "zen": 1,
-      "winking": 1,
+      "enlightened": 2,
       "surprised": 1,
       "legendary": 2,
       "cosmic": 1,
@@ -68,8 +68,8 @@
       "headphones": 2
     },
     "pattern": {
-      "spots": 5,
-      "gradient": 3,
+      "spots": 4,
+      "gradient": 4,
       "solid": 4,
       "swirls": 4,
       "diamonds": 4,
@@ -86,16 +86,17 @@
       "green_grass": 5,
       "sunset": 6,
       "blue_sky": 3,
-      "forest": 2,
+      "city": 1,
       "heaven": 2,
       "beach": 3,
+      "forest": 1,
       "aurora": 1,
       "mountains": 1
     },
     "special": {
       "none": 16,
-      "shadow": 6,
-      "glow": 2,
+      "shadow": 5,
+      "glow": 3,
       "godlike": 1,
       "sparkles": 2,
       "energy": 3,
